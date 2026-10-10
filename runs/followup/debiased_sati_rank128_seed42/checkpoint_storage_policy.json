@@ -1,0 +1,13 @@
+{
+  "job": "debiased_sati_rank128_seed42",
+  "plan_sha256": "ec3d71abad6fe805c90d79b7a4ff852afb036812a8816ab7c1fadbfcf4953ea8",
+  "absolute_deadline": null,
+  "authorization_reference": "User_completion_without_wall_cutoff_20261008",
+  "execution_policy": "complete_prespecified_epochs_or_early_stopping_no_wall_cutoff",
+  "completion_authorization_sha256": "c262529b1da889fbbb20a0a92cc09b7894a82373f0a91b4629daec8b3f63ff9d",
+  "policy": "Keep all training/SWA computation, dev evaluation and ordinary-best test checkpoint; omit only optional SWA file serialization",
+  "existing_weight_files_deleted_or_moved": false,
+  "optional_swa_serializations_omitted": [],
+  "training_completed": true,
+  "gpu_runtime_validated_before_this_run": false
+}

@@ -1,0 +1,13 @@
+{
+  "n": 896,
+  "reproduced_saved_metrics": {
+    "acc": 0.23995535714285715,
+    "weighted_f1": 0.19287138248955887,
+    "f1": 0.13104685286069137
+  },
+  "checkpoint": "best_model.pt",
+  "auxiliary_masks_used_at_prediction": false,
+  "audio_zero_acc": 0.23995535714285715,
+  "video_zero_acc": 0.23995535714285715,
+  "suppression_note": "Independent text-only model; dummy zero-feature calls are identical because no audio/video pathway exists."
+}

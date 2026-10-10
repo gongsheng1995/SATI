@@ -1,0 +1,11 @@
+{
+  "job": "debiased_all_aux0.1_seed42",
+  "plan_sha256": "b1e1771ad0ea398a3412d40b09ad84d7736d6ab0a24fdf2cb5cb7cb4a40eb78e",
+  "absolute_deadline": "2026-10-08T08:46:00+00:00",
+  "authorization_reference": "User cumulative12.88USD necessary-training authorization and suitable additional-instance authorization20261008",
+  "policy": "Keep all training/SWA computation, dev evaluation and ordinary-best test checkpoint; omit only optional SWA file serialization",
+  "existing_weight_files_deleted_or_moved": false,
+  "optional_swa_serializations_omitted": [],
+  "training_completed": true,
+  "gpu_runtime_validated_before_this_run": false
+}

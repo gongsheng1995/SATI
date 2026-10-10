@@ -1,0 +1,13 @@
+{
+  "job": "journal_mintrec1_sati_seed42_v1",
+  "plan_sha256": "ff3174918f537fb670fc2980bed22249242cb832ed88fc50c05fdde493f962e0",
+  "absolute_deadline": null,
+  "authorization_reference": "human_start_simplified_parallel_training_20261008",
+  "execution_policy": "complete_prespecified_epochs_or_early_stopping_no_wall_cutoff",
+  "completion_authorization_sha256": "fca2623b06757d50e42a3571e1b4c4ec3eb4df34723311ac02d15a3d940eea2e",
+  "policy": "Keep all training/SWA computation, dev evaluation and ordinary-best test checkpoint; omit only optional SWA file serialization",
+  "existing_weight_files_deleted_or_moved": false,
+  "optional_swa_serializations_omitted": [],
+  "training_completed": true,
+  "gpu_runtime_validated_before_this_run": false
+}

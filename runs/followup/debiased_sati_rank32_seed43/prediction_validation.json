@@ -1,0 +1,13 @@
+{
+  "n": 896,
+  "reproduced_saved_metrics": {
+    "acc": 0.26339285714285715,
+    "weighted_f1": 0.22999403240085423,
+    "f1": 0.16872434805849942
+  },
+  "checkpoint": "best_model.pt",
+  "auxiliary_masks_used_at_prediction": false,
+  "audio_zero_acc": 0.2622767857142857,
+  "video_zero_acc": 0.26450892857142855,
+  "suppression_note": "Fixed-model feature zeroing; not a retrained unimodal baseline or causal modality necessity test."
+}
