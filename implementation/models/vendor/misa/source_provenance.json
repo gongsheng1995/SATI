@@ -1,0 +1,17 @@
+{
+  "repo": "thuiar/MIntRec",
+  "revision": "6bc239695df342c22c324bb3a76789fa295ff999",
+  "files_sha256": {
+    "FusionNets/MISA.py": "1af4303a46d10cf4fc585322c1391a7cc0cab221c0788b4901e13ce8bb76b10e",
+    "SubNets/FeatureNets.py": "bbfed6538abe908e9ab68de93c08dae197e13b42c3b0a61750a2c0eaaab70500",
+    "native_losses.py": "88adbb5357a6190dc8020278c4e35880da850624eff572136fd184262779af29"
+  },
+  "source_file_mapping": {
+    "FusionNets/MISA.py": "backbones/FusionNets/MISA.py",
+    "SubNets/FeatureNets.py": "backbones/SubNets/FeatureNets.py",
+    "native_losses.py": "methods/MISA/utils.py"
+  },
+  "official_source_modified": false,
+  "license": "MIT",
+  "status": "source_retained_only_no_gpu_validation"
+}

@@ -1,0 +1,23 @@
+{
+  "repo": "thuiar/TCL-MAP",
+  "revision": "37095a591c9eb8d93f71190a78ee07bd8e78a6ea",
+  "files_sha256": {
+    "model.py": "af70b05178e7e3d7874da44f63c3da48266baa49563b2bd8feedb7ee4c1c1b8c",
+    "AlignNets.py": "f079d1eb92ddc1fdefdc4b1dc35690362c88d32f1276cae30a376d5f0d62d923",
+    "loss.py": "cfecc463f38372c78ee36ef9ffd3aaec1c15ef2533e92b1e3843a2970e31000e",
+    "SubNets/transformers_encoder/transformer.py": "a78b8bb25b0d356a22d8079eda82324c75f390801be0854a2f4c4b49aab25e1b",
+    "SubNets/transformers_encoder/multihead_attention.py": "afc1d5825d784c60618eb9232565998915d672ad1d6a8966d38c8d471f39f860",
+    "SubNets/transformers_encoder/position_embedding.py": "94d029f78c6d1adff4a0d531993eb66c3b969f08bcab236d36aad68988f0ad35"
+  },
+  "source_file_mapping": {
+    "model.py": "methods/TCL_MAP/model.py",
+    "AlignNets.py": "methods/TCL_MAP/AlignNets.py",
+    "loss.py": "methods/TCL_MAP/loss.py",
+    "SubNets/transformers_encoder/transformer.py": "methods/TCL_MAP/SubNets/transformers_encoder/transformer.py",
+    "SubNets/transformers_encoder/multihead_attention.py": "methods/TCL_MAP/SubNets/transformers_encoder/multihead_attention.py",
+    "SubNets/transformers_encoder/position_embedding.py": "methods/TCL_MAP/SubNets/transformers_encoder/position_embedding.py"
+  },
+  "official_source_modified": false,
+  "license": "MIT",
+  "status": "source_retained_only_no_gpu_validation"
+}

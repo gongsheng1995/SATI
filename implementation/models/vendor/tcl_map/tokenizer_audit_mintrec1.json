@@ -1,0 +1,212 @@
+{
+  "status": "CPU vocabulary/data audit for the MIntRec1 20-class universe; no model loading or GPU validation",
+  "vocab_sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+  "vocab_size": 30522,
+  "literal_MASK_id": 100,
+  "mask_id": 103,
+  "cls_id": 101,
+  "sep_id": 102,
+  "pad_id": 0,
+  "labels": [
+    {
+      "label": "Complain",
+      "wordpieces": [
+        "complain"
+      ],
+      "ids": [
+        17612
+      ]
+    },
+    {
+      "label": "Praise",
+      "wordpieces": [
+        "praise"
+      ],
+      "ids": [
+        8489
+      ]
+    },
+    {
+      "label": "Apologise",
+      "wordpieces": [
+        "ap",
+        "##olo",
+        "##gis",
+        "##e"
+      ],
+      "ids": [
+        9706,
+        12898,
+        17701,
+        2063
+      ]
+    },
+    {
+      "label": "Thank",
+      "wordpieces": [
+        "thank"
+      ],
+      "ids": [
+        4067
+      ]
+    },
+    {
+      "label": "Criticize",
+      "wordpieces": [
+        "critic",
+        "##ize"
+      ],
+      "ids": [
+        6232,
+        4697
+      ]
+    },
+    {
+      "label": "Agree",
+      "wordpieces": [
+        "agree"
+      ],
+      "ids": [
+        5993
+      ]
+    },
+    {
+      "label": "Taunt",
+      "wordpieces": [
+        "tau",
+        "##nt"
+      ],
+      "ids": [
+        19982,
+        3372
+      ]
+    },
+    {
+      "label": "Flaunt",
+      "wordpieces": [
+        "fl",
+        "##au",
+        "##nt"
+      ],
+      "ids": [
+        13109,
+        4887,
+        3372
+      ]
+    },
+    {
+      "label": "Joke",
+      "wordpieces": [
+        "joke"
+      ],
+      "ids": [
+        8257
+      ]
+    },
+    {
+      "label": "Oppose",
+      "wordpieces": [
+        "oppose"
+      ],
+      "ids": [
+        15391
+      ]
+    },
+    {
+      "label": "Comfort",
+      "wordpieces": [
+        "comfort"
+      ],
+      "ids": [
+        7216
+      ]
+    },
+    {
+      "label": "Care",
+      "wordpieces": [
+        "care"
+      ],
+      "ids": [
+        2729
+      ]
+    },
+    {
+      "label": "Inform",
+      "wordpieces": [
+        "inform"
+      ],
+      "ids": [
+        12367
+      ]
+    },
+    {
+      "label": "Advise",
+      "wordpieces": [
+        "advise"
+      ],
+      "ids": [
+        18012
+      ]
+    },
+    {
+      "label": "Arrange",
+      "wordpieces": [
+        "arrange"
+      ],
+      "ids": [
+        13621
+      ]
+    },
+    {
+      "label": "Introduce",
+      "wordpieces": [
+        "introduce"
+      ],
+      "ids": [
+        8970
+      ]
+    },
+    {
+      "label": "Leave",
+      "wordpieces": [
+        "leave"
+      ],
+      "ids": [
+        2681
+      ]
+    },
+    {
+      "label": "Prevent",
+      "wordpieces": [
+        "prevent"
+      ],
+      "ids": [
+        4652
+      ]
+    },
+    {
+      "label": "Greet",
+      "wordpieces": [
+        "greet"
+      ],
+      "ids": [
+        17021
+      ]
+    },
+    {
+      "label": "Ask for help",
+      "wordpieces": [
+        "ask",
+        "for",
+        "help"
+      ],
+      "ids": [
+        3198,
+        2005,
+        2393
+      ]
+    }
+  ],
+  "discarded_audit": false,
+  "max_label_tokens": 4
+}

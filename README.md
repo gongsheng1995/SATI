@@ -1,57 +1,68 @@
-# SATI Reproduction Materials Package
+# SATI results and reproducibility materials
 
-Assembled 2026-10-10; updated 2026-10-13 to cover every reported table.
-Contains the small per-run artifacts needed to verify each reported number without
-redistributing benchmark inputs or trained weights.
+Updated locally on 2026-10-13. This folder is a publication candidate; completion
+of the local package does not confirm synchronization of the public repository.
 
-## Contents
+## Scope
 
-- `runs/<queue>/<run_name>/` — 92 completed audited runs, each with:
-  - `config.json` — frozen per-run protocol (all hyperparameters, seeds, paths)
-  - `test_predictions.jsonl` — per-example test predictions (IDs, labels, probabilities, argmax)
-  - `test_results.json` — saved metrics
-  - `prediction_validation.json` — reload-and-recompute validation receipt
-  - `history.json` — per-epoch training/dev curves (checkpoint-selection audit)
-  - `resource_usage_training.json` / `resource_usage_export.json` — completion receipts
-    for the architecture-baseline queues (where applicable)
-- Queue directories:
-  - `runs/reruns/`, `runs/followup/` — core same-predictor conditions, supervision controls
-    (seeds 42–44 each), text-only conditions, and coefficient/rank sensitivity (2026-10-10 set)
-  - `runs/architecture_mintrec2/` — the five MIntRec2.0 architecture baselines
-    (MISA, MulT, MAG-BERT, TCL-MAP, MIntOOD), three optimization seeds each
-  - `runs/journal_mintrec1_misa_v1/`, `runs/journal_mintrec1_baselines_v1/` — the
-    MIntRec (20-class) architecture comparison, three seeds per method
-- `priors/` — the audited MIntRec adapted prior (`train_prior.jsonl`, 1,334 strict-JSON
-  records; SHA-256 7ddbe6f1ff0ab33bfbfaa414c2dd2f35f81d8eff4740540deb8df0c3fb06a7a7)
-  and its generation manifest (pinned Qwen/Qwen2.5-7B-Instruct revision
-  a09a35458c702b33eeacc393d103063234e8bc28, frozen prompts, raw responses).
-- `aggregations/` — three-seed aggregation records for the MIntRec comparison,
-  the independently audited MIntRec1 baseline audit record
-  (`MIntRec1_architecture_baselines_audit.json`), and `six_metric_results.json` —
-  the canonical six-metric recomputation (ACC/MF1/P/R/WF1/WP, fixed class universes)
-  from which the manuscript tables are derived.
-- `history/aggregations/` — original source receipts and progress snapshots.
-- `SHA256SUMS.json` — SHA-256 of every content file (`.git` and tool directories excluded).
+- 98 existing completed runs in `runs/`, including the six original/debiased
+  joint-within-class permutation controls under `runs/second_review/`.
+- `aggregations/six_metric_results.json`: the 26 canonical conditions used in
+  the main result tables, with run prediction hashes, means and sample SDs.
+- `classifier_inputs/data/`: byte-identical historical MIntRec2.0 priors,
+  all/no-auxiliary and frozen random/joint control masks, and MIntRec masks.
+  `classifier_inputs/mask_manifest.json` maps frozen config paths to package paths.
+  Historical development/test judgments are included only to audit descriptive
+  strata; they must not be consumed by classifier training or checkpoint selection.
+- `priors/mintrec1_bf16_v3/`: the successful 1,334-example train-only prior,
+  frozen prompt messages, raw generated text/token records, generation reservations,
+  model/preparation manifests and original independent audit receipt. No v1/v2
+  partial outputs enter this prior. The top-level prior files remain compatibility copies.
+- `implementation/`: local SATI training/model/loss and preparation implementation
+  snapshot with source hashes. This permits inspection and reuse, not certification
+  that every historical experiment binary equals the current snapshot. Baseline
+  configs retain their pinned source revisions and adaptation protocols; their
+  small pinned vendor source files and baseline adapters/drivers are included,
+  with original provenance hashes; upstream licenses and recorded revisions apply.
+- `SHA256SUMS.json`: all scientific package content hashes, excluding itself,
+  Git/tool/session files and screenshots.
 
-## Verification procedure
+## Three different reproduction tasks
 
-For any run, recompute ACC / weighted F1 / fixed-universe macro F1 directly from
-`test_predictions.jsonl` (argmax of `probabilities`; label mapping frozen in
-`config.json:label2id`) and compare with `test_results.json`. Every reported table,
-including the main architecture comparison on both datasets, derives from these files
-and from `aggregations/six_metric_results.json`. The analysis universe is fixed at 30
-classes for MIntRec2.0 (28 observed on the debiased split) and 20 classes for MIntRec.
+1. **Recompute reported scores:** only saved predictions and frozen label maps are
+   needed. Use the bundled `verification/recompute_predictions.py`; it verifies
+   IDs, probability vectors, six metrics and canonical aggregates. No GPU work.
+2. **Retrain a classifier with frozen masks:** obtain official transcripts/features
+   from the benchmark sources and the pinned BERT checkpoint; restore the mask
+   paths using `classifier_inputs/mask_manifest.json`. Preserve each run's config,
+   label order and feature hashes. The code snapshot is inspectable, but rerunning
+   all adapted recipes uses the included pinned source snapshots and drivers,
+   which retain execution guards/bindings; prepare a new local execution configuration
+   rather than editing an immutable historical recipe. Exact cross-hardware equality
+   and execution without obtaining the external data/models are not certified.
+   Original MIntRec2.0 uses WavLM/Swin ROI features; MIntRec uses official
+   wav2vec2/Faster R-CNN ROI features converted losslessly to sequence containers.
+3. **Audit the adapted prior generation:** frozen messages, raw responses, parsed
+   bits and model hashes are supplied. Downloading Qwen weights or generating a new
+   prior is a separate operation. The successful v3 archive is fully auditable;
+   historical MIntRec2.0 model versions/captions/raw responses/fallback decisions
+   remain unavailable and exact historical regeneration is not claimed.
 
-Path note: `aggregations/six_metric_results.json` references workspace-relative paths
-such as `results/second_review/...`; within this package the same runs live under
-`runs/` with identical run-directory names. One deliberate rename:
-`results/misa_review/original_native_seed42` appears here as
-`runs/architecture_mintrec2/misa_original_native_seed42`.
+Masks are weak supervision, not verified modality-necessity labels. A strict JSON
+and provenance audit is not human validation of the semantic judgments.
 
-## Excluded by design
+## External assets and paths
 
-- Trained checkpoint weights (not redistributed).
-- Original benchmark inputs and third-party features (available from the official
-  repositories and Zenodo DOI listed in the manuscript).
-- The historical MIntRec2.0 prior cache is documented in the manuscript but its full
-  generation provenance does not exist; the audited MIntRec prior here is fully traceable.
+Trained weights, original feature archives and pretrained model weights are not
+redistributed. Original benchmark inputs and any excerpts in generation records
+remain subject to their source licenses. This is a local candidate for author
+publication; no upload was performed during this repair.
+
+Official benchmarks: https://github.com/thuiar/MIntRec and
+https://github.com/thuiar/MIntRec2.0 ; MIntRec2.0 feature release:
+https://doi.org/10.5281/zenodo.8041676 .
+
+Aggregation paths use historical workspace-relative paths; within this package,
+resolve each run by its prediction SHA-256 or run-directory name under `runs/`.
+The original MISA run `original_native_seed42` is named
+`misa_original_native_seed42` in this package. Source scientific records are unchanged.

@@ -1,0 +1,306 @@
+{
+  "status": "CPU vocabulary/data audit; no model loading or GPU validation",
+  "vocab_sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+  "vocab_size": 30522,
+  "literal_MASK_id": 100,
+  "mask_id": 103,
+  "cls_id": 101,
+  "sep_id": 102,
+  "pad_id": 0,
+  "labels": [
+    {
+      "label": "Acknowledge",
+      "wordpieces": [
+        "acknowledge"
+      ],
+      "ids": [
+        13399
+      ]
+    },
+    {
+      "label": "Advise",
+      "wordpieces": [
+        "advise"
+      ],
+      "ids": [
+        18012
+      ]
+    },
+    {
+      "label": "Agree",
+      "wordpieces": [
+        "agree"
+      ],
+      "ids": [
+        5993
+      ]
+    },
+    {
+      "label": "Apologise",
+      "wordpieces": [
+        "ap",
+        "##olo",
+        "##gis",
+        "##e"
+      ],
+      "ids": [
+        9706,
+        12898,
+        17701,
+        2063
+      ]
+    },
+    {
+      "label": "Arrange",
+      "wordpieces": [
+        "arrange"
+      ],
+      "ids": [
+        13621
+      ]
+    },
+    {
+      "label": "Ask for help",
+      "wordpieces": [
+        "ask",
+        "for",
+        "help"
+      ],
+      "ids": [
+        3198,
+        2005,
+        2393
+      ]
+    },
+    {
+      "label": "Asking for opinions",
+      "wordpieces": [
+        "asking",
+        "for",
+        "opinions"
+      ],
+      "ids": [
+        4851,
+        2005,
+        10740
+      ]
+    },
+    {
+      "label": "Care",
+      "wordpieces": [
+        "care"
+      ],
+      "ids": [
+        2729
+      ]
+    },
+    {
+      "label": "Comfort",
+      "wordpieces": [
+        "comfort"
+      ],
+      "ids": [
+        7216
+      ]
+    },
+    {
+      "label": "Complain",
+      "wordpieces": [
+        "complain"
+      ],
+      "ids": [
+        17612
+      ]
+    },
+    {
+      "label": "Confirm",
+      "wordpieces": [
+        "confirm"
+      ],
+      "ids": [
+        12210
+      ]
+    },
+    {
+      "label": "Criticize",
+      "wordpieces": [
+        "critic",
+        "##ize"
+      ],
+      "ids": [
+        6232,
+        4697
+      ]
+    },
+    {
+      "label": "Doubt",
+      "wordpieces": [
+        "doubt"
+      ],
+      "ids": [
+        4797
+      ]
+    },
+    {
+      "label": "Emphasize",
+      "wordpieces": [
+        "emphasize"
+      ],
+      "ids": [
+        17902
+      ]
+    },
+    {
+      "label": "Explain",
+      "wordpieces": [
+        "explain"
+      ],
+      "ids": [
+        4863
+      ]
+    },
+    {
+      "label": "Flaunt",
+      "wordpieces": [
+        "fl",
+        "##au",
+        "##nt"
+      ],
+      "ids": [
+        13109,
+        4887,
+        3372
+      ]
+    },
+    {
+      "label": "Greet",
+      "wordpieces": [
+        "greet"
+      ],
+      "ids": [
+        17021
+      ]
+    },
+    {
+      "label": "Inform",
+      "wordpieces": [
+        "inform"
+      ],
+      "ids": [
+        12367
+      ]
+    },
+    {
+      "label": "Introduce",
+      "wordpieces": [
+        "introduce"
+      ],
+      "ids": [
+        8970
+      ]
+    },
+    {
+      "label": "Invite",
+      "wordpieces": [
+        "invite"
+      ],
+      "ids": [
+        13260
+      ]
+    },
+    {
+      "label": "Joke",
+      "wordpieces": [
+        "joke"
+      ],
+      "ids": [
+        8257
+      ]
+    },
+    {
+      "label": "Leave",
+      "wordpieces": [
+        "leave"
+      ],
+      "ids": [
+        2681
+      ]
+    },
+    {
+      "label": "Oppose",
+      "wordpieces": [
+        "oppose"
+      ],
+      "ids": [
+        15391
+      ]
+    },
+    {
+      "label": "Plan",
+      "wordpieces": [
+        "plan"
+      ],
+      "ids": [
+        2933
+      ]
+    },
+    {
+      "label": "Praise",
+      "wordpieces": [
+        "praise"
+      ],
+      "ids": [
+        8489
+      ]
+    },
+    {
+      "label": "Prevent",
+      "wordpieces": [
+        "prevent"
+      ],
+      "ids": [
+        4652
+      ]
+    },
+    {
+      "label": "Refuse",
+      "wordpieces": [
+        "refuse"
+      ],
+      "ids": [
+        10214
+      ]
+    },
+    {
+      "label": "Taunt",
+      "wordpieces": [
+        "tau",
+        "##nt"
+      ],
+      "ids": [
+        19982,
+        3372
+      ]
+    },
+    {
+      "label": "Thank",
+      "wordpieces": [
+        "thank"
+      ],
+      "ids": [
+        4067
+      ]
+    },
+    {
+      "label": "Warn",
+      "wordpieces": [
+        "warn"
+      ],
+      "ids": [
+        11582
+      ]
+    }
+  ],
+  "discarded_audit": "Local Transformers5.5.4 BertTokenizer(vocab_file=...) silently constructed only special vocabulary; ids1/4 invalid. This file audits fixed original30522-line vocabulary directly for simple canonical English labels; runtime must use Transformers4.45.2.",
+  "max_label_tokens": 4
+}

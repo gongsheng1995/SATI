@@ -1,0 +1,9 @@
+{
+  "n": 1334,
+  "source_archive_sha256": "41b268dd9523b9be67534ac8ff827db8577a0f861d1e485b332a5539bc3fb3f5",
+  "prepared_messages_match": true,
+  "raw_strict_json_matches_parsed": true,
+  "fallback": false,
+  "archive_bytes_preserved": true,
+  "semantic_human_quality_certification": false
+}

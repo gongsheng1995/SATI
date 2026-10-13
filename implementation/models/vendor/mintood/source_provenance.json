@@ -1,0 +1,76 @@
+{
+  "repo": "thuiar/MIntOOD",
+  "revision": "ad0cd88980c970366491a3d17268932b86bdeed1",
+  "files": {
+    "FusionNets/MIntOOD.py": {
+      "source_path": "backbones/FusionNets/MIntOOD.py",
+      "original_sha256": "c876fa6d25f1c9fd4fedd2ddca7d40649098366e4bd05cc1c91d46b4d0d57ea4",
+      "adapter_sha256": "73a22f754be10071d2142bb2167e55c35fdb5860a7c16d936809955475cff880",
+      "deleted_unused_import_lines": [
+        5,
+        6,
+        10,
+        11,
+        12
+      ],
+      "finite_shortest_text_mask_selection_adaptation": false
+    },
+    "FusionNets/MIntOOD_Fusion.py": {
+      "source_path": "backbones/FusionNets/MIntOOD_Fusion.py",
+      "original_sha256": "338a076da001d6673635a0602afcff6cd835338188bb7776967f8ab9680c0078",
+      "adapter_sha256": "4c4a7b490bfc443930686302e3acb3ed8fb6033d0721cacf559b1694987a09b7",
+      "deleted_unused_import_lines": [
+        9
+      ],
+      "finite_shortest_text_mask_selection_adaptation": false
+    },
+    "FusionNets/sampler.py": {
+      "source_path": "backbones/FusionNets/sampler.py",
+      "original_sha256": "6b5d582f58f817fb0cd11452ba882c8da28e36c274e4259468ced01a4e507b88",
+      "adapter_sha256": "ab674e046d57da225b9f96eb53dc11c33034f5a486350135791a87cb87aff620",
+      "deleted_unused_import_lines": [
+        5
+      ],
+      "finite_shortest_text_mask_selection_adaptation": true
+    },
+    "loss.py": {
+      "source_path": "losses/SupConLoss.py",
+      "original_sha256": "09f39ac4b3b827ddbe0a6b2c2378b5e8b64a1751f6501fb8f1d6d403372f1d7b",
+      "adapter_sha256": "09f39ac4b3b827ddbe0a6b2c2378b5e8b64a1751f6501fb8f1d6d403372f1d7b",
+      "deleted_unused_import_lines": [],
+      "finite_shortest_text_mask_selection_adaptation": false
+    },
+    "SubNets/transformers_encoder/multihead_attention.py": {
+      "source_path": "backbones/SubNets/transformers_encoder/multihead_attention.py",
+      "original_sha256": "afc1d5825d784c60618eb9232565998915d672ad1d6a8966d38c8d471f39f860",
+      "adapter_sha256": "afc1d5825d784c60618eb9232565998915d672ad1d6a8966d38c8d471f39f860",
+      "deleted_unused_import_lines": [],
+      "finite_shortest_text_mask_selection_adaptation": false
+    },
+    "SubNets/transformers_encoder/position_embedding.py": {
+      "source_path": "backbones/SubNets/transformers_encoder/position_embedding.py",
+      "original_sha256": "94d029f78c6d1adff4a0d531993eb66c3b969f08bcab236d36aad68988f0ad35",
+      "adapter_sha256": "94d029f78c6d1adff4a0d531993eb66c3b969f08bcab236d36aad68988f0ad35",
+      "deleted_unused_import_lines": [],
+      "finite_shortest_text_mask_selection_adaptation": false
+    },
+    "SubNets/transformers_encoder/transformer.py": {
+      "source_path": "backbones/SubNets/transformers_encoder/transformer.py",
+      "original_sha256": "4f200f7d8d43c184a0e9eb25385fbdd4cfca6b9d8b0708df9a1bb0c6544220a0",
+      "adapter_sha256": "4f200f7d8d43c184a0e9eb25385fbdd4cfca6b9d8b0708df9a1bb0c6544220a0",
+      "deleted_unused_import_lines": [],
+      "finite_shortest_text_mask_selection_adaptation": false
+    },
+    "SubNets/transformers_encoder/__init__.py": {
+      "source_path": "backbones/SubNets/transformers_encoder/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "adapter_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "deleted_unused_import_lines": [],
+      "finite_shortest_text_mask_selection_adaptation": false
+    }
+  },
+  "official_bytes_preserved_under": "original/",
+  "adaptation": "Unused cross-repository imports removed. Sampler argmin uses finite valid-token counts instead of modern additive-mask sums that can overflow; shortest text selection preserved. Other model/loss statements unchanged.",
+  "license": "No repository SPDX/license grant found in retained source; no invented MIT label or publication permission.",
+  "status": "local_source_preparation_only_no_execution"
+}

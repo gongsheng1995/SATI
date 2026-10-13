@@ -1,0 +1,15 @@
+{
+  "repo": "thuiar/MIntRec",
+  "revision": "6bc239695df342c22c324bb3a76789fa295ff999",
+  "files_sha256": {
+    "FusionNets/MAG_BERT.py": "411ae159e06362ab372f2a9c57378d25b0b673b04900ffd867da919551f6bd7b",
+    "SubNets/AlignNets.py": "5e2c12e00e4c945487c8c4a0865a67dff58fe7df67da3cd026c1b3f3bef0a98c"
+  },
+  "source_file_mapping": {
+    "FusionNets/MAG_BERT.py": "backbones/FusionNets/MAG_BERT.py",
+    "SubNets/AlignNets.py": "backbones/SubNets/AlignNets.py"
+  },
+  "official_source_modified": false,
+  "license": "MIT",
+  "status": "source_retained_only_no_gpu_validation"
+}

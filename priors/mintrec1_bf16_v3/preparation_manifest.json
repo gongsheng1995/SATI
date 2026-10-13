@@ -1,0 +1,198 @@
+{
+  "prepared_at_utc": "2026-10-07T09:36:09.806284+00:00",
+  "dataset": "mintrec1",
+  "status": "prepared_not_generated_not_trained_new_gpu_budget_required",
+  "new_teacher_variant": true,
+  "historical_provenance_reconstructed": false,
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "license": "apache-2.0",
+  "source_model_metadata_sha256": "86d2f7375a90397706884886dbaff5ab05f48100359462116a9f9be887d652c4",
+  "small_model_assets": [
+    {
+      "file": "README.md",
+      "source_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/a09a35458c702b33eeacc393d103063234e8bc28/README.md",
+      "sha256": "f366f33bbf6bcadbb7d87f0a21a7b65584a56b8d58b0743c77c88bee625b93a6",
+      "bytes": 6240
+    },
+    {
+      "file": "LICENSE",
+      "source_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/a09a35458c702b33eeacc393d103063234e8bc28/LICENSE",
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "bytes": 11343
+    },
+    {
+      "file": "config.json",
+      "source_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/a09a35458c702b33eeacc393d103063234e8bc28/config.json",
+      "sha256": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c",
+      "bytes": 663
+    },
+    {
+      "file": "generation_config.json",
+      "source_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/a09a35458c702b33eeacc393d103063234e8bc28/generation_config.json",
+      "sha256": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f",
+      "bytes": 243
+    },
+    {
+      "file": "tokenizer_config.json",
+      "source_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/a09a35458c702b33eeacc393d103063234e8bc28/tokenizer_config.json",
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "bytes": 7305
+    },
+    {
+      "file": "model.safetensors.index.json",
+      "source_url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/resolve/a09a35458c702b33eeacc393d103063234e8bc28/model.safetensors.index.json",
+      "sha256": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028",
+      "bytes": 27752
+    }
+  ],
+  "expected_weight_files": [
+    {
+      "file": "model-00001-of-00004.safetensors",
+      "bytes": 3945441440,
+      "sha256": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7"
+    },
+    {
+      "file": "model-00002-of-00004.safetensors",
+      "bytes": 3864726352,
+      "sha256": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185"
+    },
+    {
+      "file": "model-00003-of-00004.safetensors",
+      "bytes": 3864726424,
+      "sha256": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5"
+    },
+    {
+      "file": "model-00004-of-00004.safetensors",
+      "bytes": 3556377672,
+      "sha256": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd"
+    }
+  ],
+  "expected_model_files": [
+    {
+      "rfilename": "LICENSE",
+      "blobId": "6634c8cc3133b3848ec74b9f275acaaa1ea618ab",
+      "size": 11343
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "4e9536cebaeb5cac673952ad5d0eeae469900f81",
+      "size": 6240
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "0178295f88afc3c7f279ed284f961f8c1be00654",
+      "size": 663
+    },
+    {
+      "rfilename": "generation_config.json",
+      "blobId": "0eb3c536657dcd12626e09eca4b6198c0cbcde1e",
+      "size": 243
+    },
+    {
+      "rfilename": "merges.txt",
+      "blobId": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0",
+      "size": 1671839
+    },
+    {
+      "rfilename": "model-00001-of-00004.safetensors",
+      "blobId": "5e68dcea92e3696ddd4e1d44d9b420a31fe5622c",
+      "size": 3945441440,
+      "lfs": {
+        "sha256": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7",
+        "size": 3945441440,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00002-of-00004.safetensors",
+      "blobId": "e07e23d4595678a717aaad11eef9bc22056c284a",
+      "size": 3864726352,
+      "lfs": {
+        "sha256": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185",
+        "size": 3864726352,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00003-of-00004.safetensors",
+      "blobId": "114c07bb791bac8d2b32109b7729ef2f9a489dfe",
+      "size": 3864726424,
+      "lfs": {
+        "sha256": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5",
+        "size": 3864726424,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00004-of-00004.safetensors",
+      "blobId": "f4841c787f178938010ce784a3ec99e5568524b5",
+      "size": 3556377672,
+      "lfs": {
+        "sha256": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd",
+        "size": 3556377672,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model.safetensors.index.json",
+      "blobId": "14d037fdda5a1311dcc0275003a7a370d84114e6",
+      "size": 27752
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "443909a61d429dff23010e5bddd28ff530edda00",
+      "size": 7031645
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "07bfe0640cb5a0037f9322287fbfc682806cf672",
+      "size": 7305
+    },
+    {
+      "rfilename": "vocab.json",
+      "blobId": "4783fe10ac3adce15ac8f358ef5462739852c569",
+      "size": 2776833
+    }
+  ],
+  "expected_weight_bytes": 15231271888,
+  "weights_downloaded": false,
+  "original_train_n": 1334,
+  "debiased_train_subset_n": 293,
+  "no_dev_test_labels_sent": true,
+  "training_inputs_sha256": "1eae938faf1e376a72e0f9f8af6d57c083233d8eba7ad8284294f1c96fe1b00c",
+  "original_data_sha256": "3badd4c65e89bffdc8004686227524aab71783a402b491af03e28fb77a2b39c9",
+  "debiased_data_sha256": "7eb4a1ccfb03e6ccbbe751dfaefbdeac2caab8226dbc254aba06e1de2e228672",
+  "prompt_source_sha256": "cba8f37f23779c00c66982d8f9da0a78efcc8fbd5f40fefd2c668ae6a7b0621c",
+  "prompts": {
+    "SYSTEM_PROMPT": "You are an expert in multimodal communication analysis.\n\nYour task: Given a text utterance, video description, and the KNOWN intent label, determine which modalities are NECESSARY to correctly recognize this intent.\n\nThis is ABDUCTIVE reasoning - you know the answer (intent), now judge which information sources were needed to reach it.\n\nKey principles:\n1. text_sufficient: Could someone confidently determine this intent from text ALONE?\n   - If the text is ambiguous, sarcastic, or could have multiple interpretations \u2192 False\n   - If the text clearly and unambiguously expresses the intent \u2192 True\n\n2. audio_necessary: Would tone, pitch, emotion, or speaking style help distinguish this intent?\n   - Sarcasm, doubt, taunt, comfort often need audio cues \u2192 True\n   - Factual statements, greetings usually don't \u2192 False\n\n3. video_necessary: Would facial expressions, gestures, or body language provide critical cues?\n   - Emotions, reactions, emphasis often show on face/body \u2192 True\n   - Pure verbal content usually doesn't need video \u2192 False\n\nIMPORTANT: Be conservative with text_sufficient. If there's ANY ambiguity in how the text could be interpreted, set text_sufficient to False.\n\nOutput ONLY valid JSON, no explanation:\n{\"text_sufficient\": bool, \"audio_necessary\": bool, \"video_necessary\": bool}",
+    "USER_PROMPT_NO_VIDEO": "Analyze this sample:\n\nText: \"{text}\"\nVideo Description: (not available)\nIntent: {intent}\n\nDetermine which modalities are NECESSARY to recognize the intent \"{intent}\":\n1. Is the text alone sufficient to confidently determine this intent?\n2. Would audio (tone/emotion/prosody) help distinguish this intent?\n3. Would video (facial expression/gesture/body language) help?\n\nOutput JSON only:"
+  },
+  "input_provenance": "Public original transcript and known training intent only. No audio, frames or fabricated captions supplied.",
+  "criterion_caution": "Label-conditioned plausibility of nonverbal helpfulness without observed nonverbal content; cannot claim observed necessity or equivalent historical caption-conditioned inputs.",
+  "decoding_proposal": {
+    "do_sample": false,
+    "temperature": null,
+    "max_new_tokens": 100,
+    "repetition_penalty": 1.0,
+    "seed": 42,
+    "note": "New greedy decoding variant, not historical temperature0.1 sampling. Must archive exact tokenizer/chat-template/token IDs/model files/environment/output and parse status before using outputs."
+  },
+  "runtime_proposal": {
+    "torch_dtype": "float16",
+    "quantization": false,
+    "planned_transformers": "4.45.2",
+    "compatibility_status": "Publisher says versions below4.37 lack qwen2 support; compatibility with this exact environment/GPU remains unvalidated."
+  },
+  "fallback_policy": "No guessed/heuristic masks; unsuccessful parsing is explicit and must not silently enter training.",
+  "gpu_generation_started": false,
+  "paid_api_calls": 0,
+  "generated_priors": 0,
+  "downstream_requirements": [
+    "Generation completeness/raw-output/hash audit",
+    "New SATI three-seed training on each split; reuse all/none only if exact feature/split/training protocol remains matched",
+    "Regenerate sparsity/class/joint matched random controls for the new archive; old random masks are not automatically matched",
+    "Keep new teacher results separate from historical archive results and public audits until separately validated"
+  ],
+  "protocol_adaptation": "v3 uniform explicit lowercase JSON booleans; original prompt otherwise retained; all1334 freshly generated, v2 partial preserved not mixed"
+}

@@ -1,0 +1,171 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "preparation_sha256": "352431a8920e3c164ec39a7f50c40e683b83ed80db79605c443af8962092f909",
+  "training_inputs_sha256": "1eae938faf1e376a72e0f9f8af6d57c083233d8eba7ad8284294f1c96fe1b00c",
+  "source_sha256": "d3dca3c69197c6b9f062a266370086c286336b1e15312559cecbcfc36fb5043f",
+  "archive_helpers_sha256": "ba2635dbc7fc683e00b60b6b4bc5fdd625fa06c53f802698e972d3c9be81e9d6",
+  "batch_size": 1,
+  "max_generations": 1334,
+  "absolute_deadline": null,
+  "authorization_reference": "human_start_simplified_parallel_training_20261008",
+  "decoding": "Greedy, max100 new tokens, repetition_penalty1, one beam; no sampling.",
+  "unknown_outcome_policy": "Reserved generations count against the lifetime cap even after a crash; at most3 reservations per sample. Explicit invalid JSON is not retried with identical greedy input.",
+  "input_scope": "Prepared train transcripts/known labels, explicit no-video variant; no held-out labels/observations.",
+  "status": "generated",
+  "gpu_generation_started": true,
+  "api_calls": 0,
+  "model_files": [
+    {
+      "file": "LICENSE",
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "bytes": 11343
+    },
+    {
+      "file": "README.md",
+      "sha256": "f366f33bbf6bcadbb7d87f0a21a7b65584a56b8d58b0743c77c88bee625b93a6",
+      "bytes": 6240
+    },
+    {
+      "file": "config.json",
+      "sha256": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c",
+      "bytes": 663
+    },
+    {
+      "file": "generation_config.json",
+      "sha256": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f",
+      "bytes": 243
+    },
+    {
+      "file": "merges.txt",
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "bytes": 1671839
+    },
+    {
+      "file": "model-00001-of-00004.safetensors",
+      "sha256": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7",
+      "bytes": 3945441440
+    },
+    {
+      "file": "model-00002-of-00004.safetensors",
+      "sha256": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185",
+      "bytes": 3864726352
+    },
+    {
+      "file": "model-00003-of-00004.safetensors",
+      "sha256": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5",
+      "bytes": 3864726424
+    },
+    {
+      "file": "model-00004-of-00004.safetensors",
+      "sha256": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd",
+      "bytes": 3556377672
+    },
+    {
+      "file": "model.safetensors.index.json",
+      "sha256": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028",
+      "bytes": 27752
+    },
+    {
+      "file": "tokenizer.json",
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "bytes": 7031645
+    },
+    {
+      "file": "tokenizer_config.json",
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "bytes": 7305
+    },
+    {
+      "file": "vocab.json",
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "bytes": 2776833
+    }
+  ],
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.45.2",
+    "numpy": "2.3.2"
+  },
+  "tokenizer_chat_template": "{%- if tools %}\n    {{- '<|im_start|>system\\n' }}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- messages[0]['content'] }}\n    {%- else %}\n        {{- 'You are Qwen, created by Alibaba Cloud. You are a helpful assistant.' }}\n    {%- endif %}\n    {{- \"\\n\\n# Tools\\n\\nYou may call one or more functions to assist with the user query.\\n\\nYou are provided with function signatures within <tools></tools> XML tags:\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\\n\\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\\n<tool_call>\\n{\\\"name\\\": <function-name>, \\\"arguments\\\": <args-json-object>}\\n</tool_call><|im_end|>\\n\" }}\n{%- else %}\n    {%- if messages[0]['role'] == 'system' %}\n        {{- '<|im_start|>system\\n' + messages[0]['content'] + '<|im_end|>\\n' }}\n    {%- else %}\n        {{- '<|im_start|>system\\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- for message in messages %}\n    {%- if (message.role == \"user\") or (message.role == \"system\" and not loop.first) or (message.role == \"assistant\" and not message.tool_calls) %}\n        {{- '<|im_start|>' + message.role + '\\n' + message.content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {{- '<|im_start|>' + message.role }}\n        {%- if message.content %}\n            {{- '\\n' + message.content }}\n        {%- endif %}\n        {%- for tool_call in message.tool_calls %}\n            {%- if tool_call.function is defined %}\n                {%- set tool_call = tool_call.function %}\n            {%- endif %}\n            {{- '\\n<tool_call>\\n{\"name\": \"' }}\n            {{- tool_call.name }}\n            {{- '\", \"arguments\": ' }}\n            {{- tool_call.arguments | tojson }}\n            {{- '}\\n</tool_call>' }}\n        {%- endfor %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if (loop.index0 == 0) or (messages[loop.index0 - 1].role != \"tool\") %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- message.content }}\n        {{- '\\n</tool_response>' }}\n        {%- if loop.last or (messages[loop.index0 + 1].role != \"tool\") %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n{%- endif %}\n",
+  "generation_config": {
+    "max_length": 20,
+    "max_new_tokens": 100,
+    "min_length": 0,
+    "min_new_tokens": null,
+    "early_stopping": false,
+    "max_time": null,
+    "stop_strings": null,
+    "do_sample": false,
+    "num_beams": 1,
+    "num_beam_groups": 1,
+    "penalty_alpha": null,
+    "dola_layers": null,
+    "use_cache": true,
+    "cache_implementation": null,
+    "cache_config": null,
+    "return_legacy_cache": null,
+    "temperature": 1.0,
+    "top_k": 50,
+    "top_p": 1.0,
+    "min_p": null,
+    "typical_p": 1.0,
+    "epsilon_cutoff": 0.0,
+    "eta_cutoff": 0.0,
+    "diversity_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "encoder_repetition_penalty": 1.0,
+    "length_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "bad_words_ids": null,
+    "force_words_ids": null,
+    "renormalize_logits": false,
+    "constraints": null,
+    "forced_bos_token_id": null,
+    "forced_eos_token_id": null,
+    "remove_invalid_values": false,
+    "exponential_decay_length_penalty": null,
+    "suppress_tokens": null,
+    "begin_suppress_tokens": null,
+    "forced_decoder_ids": null,
+    "sequence_bias": null,
+    "token_healing": false,
+    "guidance_scale": null,
+    "low_memory": null,
+    "watermarking_config": null,
+    "num_return_sequences": 1,
+    "output_attentions": false,
+    "output_hidden_states": false,
+    "output_scores": false,
+    "output_logits": null,
+    "return_dict_in_generate": false,
+    "pad_token_id": 151643,
+    "bos_token_id": 151643,
+    "eos_token_id": [
+      151645,
+      151643
+    ],
+    "encoder_no_repeat_ngram_size": 0,
+    "decoder_start_token_id": null,
+    "is_assistant": false,
+    "num_assistant_tokens": 20,
+    "num_assistant_tokens_schedule": "constant",
+    "assistant_confidence_threshold": 0.4,
+    "prompt_lookup_num_tokens": null,
+    "max_matching_ngram_size": null,
+    "generation_kwargs": {},
+    "_from_model_config": false,
+    "transformers_version": "4.45.2"
+  },
+  "effective_sampling_temperature": null,
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "torch_dtype": "bfloat16",
+  "attention_implementation": "eager",
+  "reproducibility_caution": "Exact files, inputs, token IDs and outputs retained; bitwise equality across hardware or resumed batch composition is not guaranteed.",
+  "reserved_generations": 1334,
+  "completed_train_samples": 1334,
+  "failed_ids": [],
+  "raw_outputs_sha256": "05771c0cae83ead3a187a64741fb95db10126a686a51a71912ea266edf514fe8",
+  "train_prior_sha256": "7ddbe6f1ff0ab33bfbfaa414c2dd2f35f81d8eff4740540deb8df0c3fb06a7a7",
+  "caution": "Independent completeness/quality audit and new downstream runs required before manuscript claims."
+}

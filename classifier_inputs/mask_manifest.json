@@ -1,0 +1,65 @@
+{
+  "files": [
+    {
+      "original_path": "data/llm_prior.jsonl",
+      "package_path": "classifier_inputs/data/llm_prior.jsonl",
+      "records": 9304,
+      "sha256": "42812b7273f98d38ff457f6d4d1a2144f0185dafc27396011b8f64b51cdbca56"
+    },
+    {
+      "original_path": "data/controls/all_true.jsonl",
+      "package_path": "classifier_inputs/data/controls/all_true.jsonl",
+      "records": 9304,
+      "sha256": "ebaff17ded19bca03509aff2a2ae85aa887b5fa49aa8f43019239c4c9ce6c405"
+    },
+    {
+      "original_path": "data/controls/no_prior.jsonl",
+      "package_path": "classifier_inputs/data/controls/no_prior.jsonl",
+      "records": 9304,
+      "sha256": "cb80559bf99ae79a6ac723103918d27c0081a738d640518a04b63e48fbbd79ed"
+    },
+    {
+      "original_path": "data/controls/density_matched_prior.jsonl",
+      "package_path": "classifier_inputs/data/controls/density_matched_prior.jsonl",
+      "records": 9304,
+      "sha256": "6356e7c1b498edd0d91d910bee7e8b194eb0b75b0b239485088634d895d3dc45"
+    },
+    {
+      "original_path": "data/controls/class_conditioned_prior.jsonl",
+      "package_path": "classifier_inputs/data/controls/class_conditioned_prior.jsonl",
+      "records": 9304,
+      "sha256": "511fa1089270b63bc895f607b8b7360f33b69cf3708bf34ad3918af4d97e17de"
+    },
+    {
+      "original_path": "data/second_review_controls/original_joint_class_seed42.jsonl",
+      "package_path": "classifier_inputs/data/second_review_controls/original_joint_class_seed42.jsonl",
+      "records": 9304,
+      "sha256": "e8c8b3e755493145b31f1a4d8520a486d0ff1ff47e7627fee03fdba7cb826d98"
+    },
+    {
+      "original_path": "data/second_review_controls/debiased_joint_class_seed42.jsonl",
+      "package_path": "classifier_inputs/data/second_review_controls/debiased_joint_class_seed42.jsonl",
+      "records": 9304,
+      "sha256": "bff8391995dbff9a7c425776c10555cd884a680aea84958a5aa58e30d7e2ce5f"
+    },
+    {
+      "original_path": "data/prepared_mintrec1/controls/all_true.jsonl",
+      "package_path": "classifier_inputs/data/prepared_mintrec1/controls/all_true.jsonl",
+      "records": 1334,
+      "sha256": "c26e2b6e3aec6124c1cf50ff98a61090b6305969c9dac34122f57322fac2392f"
+    },
+    {
+      "original_path": "data/prepared_mintrec1/controls/no_prior.jsonl",
+      "package_path": "classifier_inputs/data/prepared_mintrec1/controls/no_prior.jsonl",
+      "records": 1334,
+      "sha256": "1d7bf03853302c3562dcf0c3e3a0e363465ac05fdc28c5e764f9ee49e042ca96"
+    },
+    {
+      "original_path": "data/audited_journal_mintrec1_bf16_v3/train_prior.jsonl",
+      "package_path": "classifier_inputs/data/audited_journal_mintrec1_bf16_v3/train_prior.jsonl",
+      "records": 1334,
+      "sha256": "7ddbe6f1ff0ab33bfbfaa414c2dd2f35f81d8eff4740540deb8df0c3fb06a7a7"
+    }
+  ],
+  "policy": "Byte-identical frozen caches; development/test records do not enter optimization or checkpoint selection. Historical raw generation provenance remains unavailable."
+}

@@ -1,0 +1,123 @@
+{
+  "checked_at_utc": "2026-10-07T08:46:48.982403+00:00",
+  "download_manifest_sha256": "84dee6b4cdb507bb881c925417bf393d5f6f2aab72ef4654e20f852eb4a6a5f8",
+  "status": "official_features_memberships_text_labels_dimensions_finiteness_audited_not_trained",
+  "gpu_work_started": false,
+  "training_started": false,
+  "audit_runtime": {
+    "torch": "2.11.0+cpu",
+    "numpy": "2.3.5",
+    "device": "CPU"
+  },
+  "source_sha256": "2cbf6546618e23e23c2d5e803fa1de523a0b26e1e57e87e1810238236b2408c0",
+  "splits": {
+    "train": {
+      "n": 1334,
+      "official_tsv_sha256": "348289d7d140b2c0716b35a03e7045b684c4b90f5c30d1281f9a6b7cb3b9903b",
+      "public_release_metadata_matches_official": true,
+      "sample_order_matches_official": true
+    },
+    "dev": {
+      "n": 445,
+      "official_tsv_sha256": "a697b382fdf05450d9d6c23995b92087863938d6b73b6e6d2d14babccc7c48e5",
+      "public_release_metadata_matches_official": true,
+      "sample_order_matches_official": true
+    },
+    "test": {
+      "n": 445,
+      "official_tsv_sha256": "e4394869fc02898e00fad0a1b03e0333760a9b0499da2fa3f8af030a384c8f3a",
+      "public_release_metadata_matches_official": true,
+      "sample_order_matches_official": true
+    }
+  },
+  "features": {
+    "audio": {
+      "file": "E:\\paper\\kbs\u8bba\u6587\\SATI 9\\data\\mintrec1_official_inputs\\audio_feats.pkl",
+      "bytes": 807168629,
+      "sha256": "a9bb84470cc98fb7c336c97409c089b8c1d60001cb852e536d954b2467f376bb",
+      "archive_keys": 2224,
+      "required_ids": 2224,
+      "extra_keys": 0,
+      "missing_ids": [],
+      "invalid_feature_rows": [],
+      "source_ndim_counts": {
+        "2": 2224
+      },
+      "source_dtype_counts": {
+        "float32": 2224
+      },
+      "feature_dimension": 768,
+      "sequence_length_min": 28,
+      "sequence_length_max": 479,
+      "sequence_length_mean": 118.03012589928058,
+      "adapter_requirement": "Squeeze singleton middle axis if3D, then retain order or mean-pool2D; no hidden zero/missing feature fallback.",
+      "normalized_sequence_cache": {
+        "path": "E:\\paper\\kbs\u8bba\u6587\\SATI 9\\data\\prepared_mintrec1\\audio_sequence_feats.pkl",
+        "bytes": 806527879,
+        "sha256": "377fa56e15392097241a4a0de2817a38f840f8c91bbdafa3218c19a50c32c37b",
+        "md5": "b382100a2614b988f102d874f42f633c",
+        "pickle_protocol": 4,
+        "operation": "CPU Tensor -> NumPy; singleton middle axis removed; contiguous arrays. No dtype conversion, pooling, truncation or feature values changed.",
+        "n": 2224,
+        "ndim": 2,
+        "numerical_values_preserved": true
+      }
+    },
+    "video": {
+      "file": "E:\\paper\\kbs\u8bba\u6587\\SATI 9\\data\\mintrec1_official_inputs\\video_feats.pkl",
+      "bytes": 131158629,
+      "sha256": "c128fe576df61da858293af6ada88112b9469cb4e1a1d44a85421ddc8e02b2ea",
+      "archive_keys": 2224,
+      "required_ids": 2224,
+      "extra_keys": 0,
+      "missing_ids": [],
+      "invalid_feature_rows": [],
+      "source_ndim_counts": {
+        "3": 2224
+      },
+      "source_dtype_counts": {
+        "float32": 2224
+      },
+      "feature_dimension": 256,
+      "sequence_length_min": 13,
+      "sequence_length_max": 225,
+      "sequence_length_mean": 54.375,
+      "adapter_requirement": "Squeeze singleton middle axis if3D, then retain order or mean-pool2D; no hidden zero/missing feature fallback.",
+      "normalized_sequence_cache": {
+        "path": "E:\\paper\\kbs\u8bba\u6587\\SATI 9\\data\\prepared_mintrec1\\video_sequence_feats.pkl",
+        "bytes": 123954598,
+        "sha256": "dc8da75aa73e2070a3dac6531f265835e45b260acb5dab0146ab4a4dd992cd75",
+        "md5": "fb4efaa2317ed6b219db60655cf14af7",
+        "pickle_protocol": 4,
+        "operation": "CPU Tensor -> NumPy; singleton middle axis removed; contiguous arrays. No dtype conversion, pooling, truncation or feature values changed.",
+        "n": 2224,
+        "ndim": 2,
+        "numerical_values_preserved": true
+      }
+    }
+  },
+  "fixed_class_universe": [
+    "Complain",
+    "Praise",
+    "Apologise",
+    "Thank",
+    "Criticize",
+    "Agree",
+    "Taunt",
+    "Flaunt",
+    "Joke",
+    "Oppose",
+    "Comfort",
+    "Care",
+    "Inform",
+    "Advise",
+    "Arrange",
+    "Introduce",
+    "Leave",
+    "Prevent",
+    "Greet",
+    "Ask for help"
+  ],
+  "n_benchmark_ids": 2224,
+  "debiased_memberships_use_validated_official_feature_keys": true
+}
