@@ -1,0 +1,191 @@
+{
+  "source": "Text-Takes-Over-EMNLP-2025/MultiModal-Intent-EMNLP-2025, Dataset/Human-Annotation/MIntRec2.0",
+  "source_repo_revision": "ef915dec39861e8ca58971b6d9ee8cea8d769c5e",
+  "human_test_file_sha256": "c9d442bbf2f6944b3e66569894cebc7c9ed013f33cb7062d7dda7f154cd1c55c",
+  "prior_file_sha256": "42812b7273f98d38ff457f6d4d1a2144f0185dafc27396011b8f64b51cdbca56",
+  "criteria": "Human annotation is the smallest sufficient modality combination; SATI asks whether a modality would help. Agreement is descriptive, not causal necessity accuracy.",
+  "seed": 20261006,
+  "permutations": 10000,
+  "splits": {
+    "train": {
+      "raw_human_rows": 862,
+      "matched_valid_rows": 850,
+      "excluded": {
+        "blank": 12
+      },
+      "human_label_counts": {
+        "Text": 726,
+        "Video+Text": 43,
+        "Audio+Text": 27,
+        "Audio+Video+Text": 49,
+        "Video": 5
+      },
+      "audio": {
+        "tp": 61,
+        "fp": 525,
+        "tn": 249,
+        "fn": 15,
+        "human_positive": 76,
+        "mask_positive": 586,
+        "accuracy": 0.36470588235294116,
+        "precision": 0.10409556313993173,
+        "recall": 0.8026315789473685,
+        "f1": 0.18429003021148035,
+        "cohen_kappa": 0.030884998353137905,
+        "accuracy_wilson95": [
+          0.3330225377731105,
+          0.3976066116738247
+        ]
+      },
+      "video": {
+        "tp": 91,
+        "fp": 640,
+        "tn": 113,
+        "fn": 6,
+        "human_positive": 97,
+        "mask_positive": 731,
+        "accuracy": 0.24,
+        "precision": 0.12448700410396717,
+        "recall": 0.9381443298969072,
+        "f1": 0.21980676328502416,
+        "cohen_kappa": 0.02292939681771432,
+        "accuracy_wilson95": [
+          0.2124993540661902,
+          0.26984014182748534
+        ]
+      },
+      "joint_exact_match": 0.15529411764705883,
+      "joint_all_text_baseline": 0.8541176470588235,
+      "joint_exact_wilson95": [
+        0.13250202895262386,
+        0.18118789094261117
+      ]
+    },
+    "dev": {
+      "raw_human_rows": 221,
+      "matched_valid_rows": 213,
+      "excluded": {
+        "Na": 8
+      },
+      "human_label_counts": {
+        "Text": 157,
+        "Video+Text": 20,
+        "Audio+Video+Text": 22,
+        "Audio+Text": 11,
+        "Video": 3
+      },
+      "audio": {
+        "tp": 25,
+        "fp": 121,
+        "tn": 59,
+        "fn": 8,
+        "human_positive": 33,
+        "mask_positive": 146,
+        "accuracy": 0.39436619718309857,
+        "precision": 0.17123287671232876,
+        "recall": 0.7575757575757576,
+        "f1": 0.27932960893854747,
+        "cohen_kappa": 0.035590186374644596,
+        "accuracy_wilson95": [
+          0.3311629596592097,
+          0.4613121498298367
+        ]
+      },
+      "video": {
+        "tp": 41,
+        "fp": 144,
+        "tn": 24,
+        "fn": 4,
+        "human_positive": 45,
+        "mask_positive": 185,
+        "accuracy": 0.3051643192488263,
+        "precision": 0.22162162162162163,
+        "recall": 0.9111111111111111,
+        "f1": 0.3565217391304348,
+        "cohen_kappa": 0.025231910946196683,
+        "accuracy_wilson95": [
+          0.24722949085950152,
+          0.37000237775362865
+        ]
+      },
+      "joint_exact_match": 0.19718309859154928,
+      "joint_all_text_baseline": 0.7370892018779343,
+      "joint_exact_wilson95": [
+        0.1493200408551023,
+        0.2557752730134974
+      ]
+    },
+    "test": {
+      "raw_human_rows": 406,
+      "matched_valid_rows": 398,
+      "excluded": {
+        "Na": 8
+      },
+      "human_label_counts": {
+        "Text": 295,
+        "Video": 6,
+        "Audio+Video+Text": 40,
+        "Video+Text": 32,
+        "Audio+Text": 25
+      },
+      "audio": {
+        "tp": 57,
+        "fp": 208,
+        "tn": 125,
+        "fn": 8,
+        "human_positive": 65,
+        "mask_positive": 265,
+        "accuracy": 0.457286432160804,
+        "precision": 0.21509433962264152,
+        "recall": 0.8769230769230769,
+        "f1": 0.34545454545454546,
+        "cohen_kappa": 0.11272577149344612,
+        "accuracy_wilson95": [
+          0.4089850558452479,
+          0.5064044609562747
+        ]
+      },
+      "video": {
+        "tp": 76,
+        "fp": 281,
+        "tn": 39,
+        "fn": 2,
+        "human_positive": 78,
+        "mask_positive": 357,
+        "accuracy": 0.2889447236180904,
+        "precision": 0.21288515406162464,
+        "recall": 0.9743589743589743,
+        "f1": 0.34942528735632183,
+        "cohen_kappa": 0.040906691190245065,
+        "accuracy_wilson95": [
+          0.24659847013671793,
+          0.3353262011178642
+        ]
+      },
+      "joint_exact_match": 0.20603015075376885,
+      "joint_all_text_baseline": 0.7412060301507538,
+      "joint_exact_wilson95": [
+        0.16919598213099563,
+        0.2484848099736009
+      ]
+    }
+  },
+  "test_split_permutation_audit": {
+    "observed_joint_exact_match": 0.20603015075376885,
+    "global_density_matched_shuffle": {
+      "mean": 0.11849095477386934,
+      "sd": 0.013058824471461561,
+      "q025": 0.09296482412060302,
+      "q975": 0.14321608040201006,
+      "one_sided_mc_p_ge_observed": 9.999000099990002e-05
+    },
+    "within_intent_class_shuffle": {
+      "mean": 0.18368291457286431,
+      "sd": 0.009804704280875138,
+      "q025": 0.16331658291457288,
+      "q975": 0.20351758793969849,
+      "one_sided_mc_p_ge_observed": 0.012998700129987
+    },
+    "interpretation": "Tests whether cached sample assignments align with the external minimal-sufficient-modality labels beyond global or within-intent rates; it does not test downstream classifier performance."
+  }
+}

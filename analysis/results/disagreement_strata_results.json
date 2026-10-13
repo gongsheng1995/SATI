@@ -1,0 +1,145 @@
+{
+  "protocols": {
+    "original": {
+      "seeds": [
+        {
+          "seed": 42,
+          "P": {
+            "n": 1879,
+            "sati_acc": 0.6072378924960086,
+            "all_acc": 0.6056412985630655,
+            "sati_only_correct": 56,
+            "all_only_correct": 53
+          },
+          "N": {
+            "n": 154,
+            "sati_acc": 0.6753246753246753,
+            "all_acc": 0.7402597402597403,
+            "sati_only_correct": 1,
+            "all_only_correct": 11
+          }
+        },
+        {
+          "seed": 43,
+          "P": {
+            "n": 1879,
+            "sati_acc": 0.5949973390101118,
+            "all_acc": 0.5918041511442257,
+            "sati_only_correct": 32,
+            "all_only_correct": 26
+          },
+          "N": {
+            "n": 154,
+            "sati_acc": 0.7662337662337663,
+            "all_acc": 0.7532467532467533,
+            "sati_only_correct": 4,
+            "all_only_correct": 2
+          }
+        },
+        {
+          "seed": 44,
+          "P": {
+            "n": 1879,
+            "sati_acc": 0.5971261309207025,
+            "all_acc": 0.6051091005854178,
+            "sati_only_correct": 77,
+            "all_only_correct": 92
+          },
+          "N": {
+            "n": 154,
+            "sati_acc": 0.7077922077922078,
+            "all_acc": 0.7142857142857143,
+            "sati_only_correct": 7,
+            "all_only_correct": 8
+          }
+        }
+      ],
+      "strata": {},
+      "summary": {
+        "P": {
+          "n": 1879,
+          "sati_acc_mean": 0.599787120808941,
+          "all_acc_mean": 0.6008515167642363,
+          "diff_pp": -0.10643959552952831
+        },
+        "N": {
+          "n": 154,
+          "sati_acc_mean": 0.7164502164502164,
+          "all_acc_mean": 0.735930735930736,
+          "diff_pp": -1.9480519480519543
+        }
+      }
+    },
+    "debiased": {
+      "seeds": [
+        {
+          "seed": 42,
+          "P": {
+            "n": 847,
+            "sati_acc": 0.2502951593860685,
+            "all_acc": 0.2408500590318772,
+            "sati_only_correct": 41,
+            "all_only_correct": 33
+          },
+          "N": {
+            "n": 49,
+            "sati_acc": 0.40816326530612246,
+            "all_acc": 0.40816326530612246,
+            "sati_only_correct": 3,
+            "all_only_correct": 3
+          }
+        },
+        {
+          "seed": 43,
+          "P": {
+            "n": 847,
+            "sati_acc": 0.2243211334120425,
+            "all_acc": 0.2243211334120425,
+            "sati_only_correct": 73,
+            "all_only_correct": 73
+          },
+          "N": {
+            "n": 49,
+            "sati_acc": 0.32653061224489793,
+            "all_acc": 0.5102040816326531,
+            "sati_only_correct": 1,
+            "all_only_correct": 10
+          }
+        },
+        {
+          "seed": 44,
+          "P": {
+            "n": 847,
+            "sati_acc": 0.23258559622195984,
+            "all_acc": 0.23258559622195984,
+            "sati_only_correct": 39,
+            "all_only_correct": 39
+          },
+          "N": {
+            "n": 49,
+            "sati_acc": 0.3673469387755102,
+            "all_acc": 0.32653061224489793,
+            "sati_only_correct": 3,
+            "all_only_correct": 1
+          }
+        }
+      ],
+      "strata": {},
+      "summary": {
+        "P": {
+          "n": 847,
+          "sati_acc_mean": 0.23573396300669028,
+          "all_acc_mean": 0.23258559622195984,
+          "diff_pp": 0.3148366784730433
+        },
+        "N": {
+          "n": 49,
+          "sati_acc_mean": 0.36734693877551017,
+          "all_acc_mean": 0.41496598639455784,
+          "diff_pp": -4.761904761904767
+        }
+      }
+    }
+  },
+  "method": "Test samples stratified by frozen prior test judgments: P = audio or video mask positive (selected for auxiliary supervision), N = neither selected (all-sample supervises, SATI does not). Accuracy is over per-stratum samples; three seeds averaged; flips are per-seed totals summed."
+}

@@ -1,0 +1,167 @@
+{
+  "checked_at_utc": "2026-10-08T00:08:14.243648+00:00",
+  "status": "complete_metadata_membership_audit",
+  "input_sha256": {
+    "data\\retrain_inputs\\text\\train.tsv": "da1587ef5047e7897d0d590e91e22bcd090f02236134d2f75f6e625f7d15917b",
+    "data\\retrain_inputs\\text\\dev.tsv": "d8e8c06293dd5957bea1ccfe42964ec0997646ee6fa48965525d8fb7db102ce2",
+    "data\\retrain_inputs\\text\\test.tsv": "9e5fedea095d4374521a990a00f09782476b75d1a6cc2ac8774b7cca4cb36637",
+    "data/retrain_inputs/data.json": "5fb75f3e65d51c09bfaa263c210220601422600ac8f6256a1cc8049ddfc191d0",
+    "data/debiased_mintrec2/data.json": "b7f2d3fa4e2ade9d29f4622f2ec42f1746f6e5491c659aa91d0bd1e7461e1ae1"
+  },
+  "analysis_source_sha256": "817f57cea226e35e86842a0ce5bdd32ad6d73c4281f81b7f8cd71cdb73fb94ad",
+  "protocols": {
+    "original": {
+      "counts": {
+        "train": {
+          "samples": 6165,
+          "dialogues": 871,
+          "sources": [
+            "bigbang",
+            "friends",
+            "superstore"
+          ]
+        },
+        "dev": {
+          "samples": 1106,
+          "dialogues": 125,
+          "sources": [
+            "bigbang",
+            "friends",
+            "superstore"
+          ]
+        },
+        "test": {
+          "samples": 2033,
+          "dialogues": 249,
+          "sources": [
+            "bigbang",
+            "friends",
+            "superstore"
+          ]
+        }
+      },
+      "pairwise_overlap": [
+        {
+          "splits": [
+            "train",
+            "dev"
+          ],
+          "shared_sample_ids": 0,
+          "shared_dialogue_count": 0,
+          "shared_dialogue_ids": [],
+          "shared_sources": [
+            "bigbang",
+            "friends",
+            "superstore"
+          ]
+        },
+        {
+          "splits": [
+            "train",
+            "test"
+          ],
+          "shared_sample_ids": 0,
+          "shared_dialogue_count": 0,
+          "shared_dialogue_ids": [],
+          "shared_sources": [
+            "bigbang",
+            "friends",
+            "superstore"
+          ]
+        },
+        {
+          "splits": [
+            "dev",
+            "test"
+          ],
+          "shared_sample_ids": 0,
+          "shared_dialogue_count": 0,
+          "shared_dialogue_ids": [],
+          "shared_sources": [
+            "bigbang",
+            "friends",
+            "superstore"
+          ]
+        }
+      ]
+    },
+    "debiased": {
+      "counts": {
+        "train": {
+          "samples": 2840,
+          "dialogues": 832,
+          "sources": [
+            "bigbang",
+            "friends",
+            "superstore"
+          ]
+        },
+        "dev": {
+          "samples": 479,
+          "dialogues": 108,
+          "sources": [
+            "bigbang",
+            "friends",
+            "superstore"
+          ]
+        },
+        "test": {
+          "samples": 896,
+          "dialogues": 228,
+          "sources": [
+            "bigbang",
+            "friends",
+            "superstore"
+          ]
+        }
+      },
+      "pairwise_overlap": [
+        {
+          "splits": [
+            "train",
+            "dev"
+          ],
+          "shared_sample_ids": 0,
+          "shared_dialogue_count": 0,
+          "shared_dialogue_ids": [],
+          "shared_sources": [
+            "bigbang",
+            "friends",
+            "superstore"
+          ]
+        },
+        {
+          "splits": [
+            "train",
+            "test"
+          ],
+          "shared_sample_ids": 0,
+          "shared_dialogue_count": 0,
+          "shared_dialogue_ids": [],
+          "shared_sources": [
+            "bigbang",
+            "friends",
+            "superstore"
+          ]
+        },
+        {
+          "splits": [
+            "dev",
+            "test"
+          ],
+          "shared_sample_ids": 0,
+          "shared_dialogue_count": 0,
+          "shared_dialogue_ids": [],
+          "shared_sources": [
+            "bigbang",
+            "friends",
+            "superstore"
+          ]
+        }
+      ]
+    }
+  },
+  "dialogue_ids_with_multiple_sources": {},
+  "scope": "IDs/labels/split placement and official Dialogue_id/Source metadata only. Source overlap does not establish duplicate media or label leakage; no claim of speaker-disjoint or unseen-source evaluation.",
+  "training_or_generation_started": false
+}

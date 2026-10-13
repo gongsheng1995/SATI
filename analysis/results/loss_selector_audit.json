@@ -1,0 +1,47 @@
+{
+  "n": 398,
+  "selector": "select modality when adding it to text decreases true-label NLL (equivalently increases true-label probability); strict threshold delta>0, no tuning",
+  "source": "Text-Takes-Over-EMNLP-2025/MultiModal-Intent-EMNLP-2025, Phase-2-Automated-Annotation/MIntRec-2-auto-annotate; released Mult/BERT outputs",
+  "caveat": "External model outputs; not retrained with SATI features, splits, or protocol. Alignment to minimum-sufficient human labels is descriptive and criteria differ.",
+  "modalities": {
+    "audio": {
+      "positive": 169,
+      "tp": 26,
+      "fp": 143,
+      "tn": 190,
+      "fn": 39,
+      "precision": 0.15384615384615385,
+      "recall": 0.4,
+      "f1": 0.2222222222222222,
+      "cohen_kappa": -0.017902813299232746
+    },
+    "video": {
+      "positive": 195,
+      "tp": 38,
+      "fp": 157,
+      "tn": 163,
+      "fn": 40,
+      "precision": 0.19487179487179487,
+      "recall": 0.48717948717948717,
+      "f1": 0.2783882783882784,
+      "cohen_kappa": -0.0021985326073063493
+    }
+  },
+  "source_repo_revision": "ef915dec39861e8ca58971b6d9ee8cea8d769c5e",
+  "joint_exact": {
+    "count": 108,
+    "fraction": 0.271356783919598
+  },
+  "mapping_checks": {
+    "official_test_rows": 2033,
+    "label_index_matches": 2033,
+    "matched_annotated_test_rows": 398
+  },
+  "sha256": {
+    "human_test": "c9d442bbf2f6944b3e66569894cebc7c9ed013f33cb7062d7dda7f154cd1c55c",
+    "test_rows": "737cc06552af3f3b62958fab4a8d64c4f9bc7ff5aac5d90438b4ff6e3de512fb",
+    "text_probs": "3f1e992bc2c0d58d7202c9497ffb1cb2fa45f46daa8b868c220746bbd3181166",
+    "text_audio_probs": "8f076f5c9347790bf3ddce387ab4d0722b174c8a88fa5c636065d57160a87135",
+    "text_video_probs": "be18eba68a68905f87f5239ba24f9d5ce3976a4cf3dba2210f0ffc88a7a96cf9"
+  }
+}

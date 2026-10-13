@@ -26,6 +26,10 @@ of the local package does not confirm synchronization of the public repository.
   with original provenance hashes; upstream licenses and recorded revisions apply.
 - `SHA256SUMS.json`: all scientific package content hashes, excluding itself,
   Git/tool/session files and screenshots.
+- `analysis/`: diagnostic-analysis scripts and result records that consume external
+  human annotations or released model probabilities (dialogue-cluster bootstrap,
+  split-membership audit, human-reference audit, loss-based selector audit,
+  prior strata and prior-structure statistics), with a provenance README.
 
 ## Three different reproduction tasks
 
