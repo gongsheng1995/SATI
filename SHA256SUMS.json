@@ -1,6 +1,6 @@
 {
   "README.md": "c9e487082b07da7397a41858e84fd570fdda8472e025b1f2f83d1f6811f8d84f",
-  "SHA256SUMS.json": "148a031113076f6ec7b30a7aaaaee1cec85e81499a811d8d7938100a0c63ea0a",
+  "SHA256SUMS.json": "7c0c2ebe63b1807713919ba3738f9e88733d1facccafa409261a445a11067767",
   "aggregations/MIntRec1_architecture_baselines_audit.json": "194799ea5ce9affeb0d11751ab5e38202580efd5947dd3455268ea32ae7775e4",
   "aggregations/MIntRec_original_all_three_seed_aggregation.json": "cb372f3701b587d0349aa21b5c50aea2f0aafcded5395d45f180b7e1d1dcaafb",
   "aggregations/MIntRec_original_final_comparison.json": "9de092f376c627d7fbefec49ac030447947adbe8e6832281bf3b0ce98b4ec445",
@@ -746,6 +746,5 @@
   "runs/second_review/original_joint_class_mask42_focal_seed44/prediction_validation.json": "7148624d68bd76ad9bd8f9167d94a0dd039920e8f0dc684f68fa2ac7cb51de36",
   "runs/second_review/original_joint_class_mask42_focal_seed44/test_predictions.jsonl": "773f95fde8823d603843ec1f0719896541c200e2d13f6122cf7c2bc04134fe0e",
   "runs/second_review/original_joint_class_mask42_focal_seed44/test_results.json": "eba4f71885acbb31faa759e6d7218f610fe15b3d918633ed91c30f6d8d2d3b08",
-  "verification/__pycache__/recompute_predictions.cpython-312.pyc": "caac908fddf7787e9a10ef598b7b2c87a6ab026b7dd7341a713eeebc1cf2532c",
   "verification/recompute_predictions.py": "3666d7b9324f228150b906ebc4c4b241898e982d108cab21fd1df715630f0a15"
 }
