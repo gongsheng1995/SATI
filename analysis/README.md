@@ -17,6 +17,27 @@ probabilities, complementing the saved-prediction verification entry point in
 | `scripts/analyze_prior_structure.py` | (prints; numbers quoted in the manuscript) | Prior coverage, entropy decomposition, total-variation distances |
 | `scripts/analyze_review_results.py`, `scripts/analyze_second_review_results.py` | — | Local module dependencies of the dialogue-cluster script |
 
+## How to run each script
+
+Working-directory convention: all commands below assume the workspace layout
+described under "Path conventions" (a root containing `SATI 9/` and
+`paper_work/`). Python 3.12 with `numpy` is required; no GPU is used.
+
+| Script | Invocation | Inputs | Output |
+|---|---|---|---|
+| `audit_priors_against_human.py` | `python audit_priors_against_human.py` (defaults) or `--prior --human_dir --out --seed --permutations` | SATI prior archive (`--prior`, maps to the package's historical prior under `classifier_inputs/data/`); public human annotations (`--human_dir`, external download) | `human_prior_audit.json` (seed 20261006, 10,000 permutations by default) |
+| `audit_loss_selector.py` | `python audit_loss_selector.py` (paths fixed at module top: `ROOT/HUMAN/DATA/PRIOR/OUT`) | released Phase-2 MulT/BERT probabilities (external download); prior archive; official test order | `loss_selector_audit.json` |
+| `audit_dialogue_split_membership.py` | `python audit_dialogue_split_membership.py` (paths relative to the code root) | official train/dev/test text tables (external download, not redistributed) | `dialogue_split_membership_audit.json` |
+| `analyze_dialogue_cluster_controls.py` | `python analyze_dialogue_cluster_controls.py` (no arguments) | `results/second_review/combined_review_analysis.json` (the audited 36-run report, included in `results/` here); official `test.tsv`; per-run prediction directories under `results/reruns/` and `results/second_review/` (package: `runs/`) | `dialogue_cluster_control_analysis.json` (5,000 paired dialogue/seed bootstrap draws) |
+| `disagreement_strata_analysis.py` | `python disagreement_strata_analysis.py` | prior archive; three-seed SATI and all-sample predictions under `results/reruns/` | `disagreement_strata_results.json` |
+| `analyze_prior_structure.py` | `python analyze_prior_structure.py` (prints statistics) | prior archive | entropy decomposition, per-class rates and total-variation distances quoted in the manuscript |
+
+Reproduction note: the result records shipped in `results/` were produced with
+the seeds and input revisions recorded inside each JSON; rerunning after
+obtaining the external files reproduces them deterministically. The scripts
+verify prediction SHA-256 values against the combined report before
+resampling, so substituted inputs fail loudly.
+
 ## External inputs (not redistributed)
 
 - The modality-bias study's released files: adjudicated human modality

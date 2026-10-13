@@ -1,0 +1,1641 @@
+{
+  "checked_at_utc": "2026-10-07T14:33:10.648586+00:00",
+  "status": "complete",
+  "previous_completed_and_audited": 22,
+  "new_completed_and_audited": 14,
+  "combined_audited": 36,
+  "combined_planned": 36,
+  "new_queue_status": "complete",
+  "current_run": null,
+  "absolute_deadline_utc": "2026-10-07T16:36:50.053845+00:00",
+  "metric_order": [
+    "ACC",
+    "WF1",
+    "MF1_fixed_30_classes"
+  ],
+  "plan_sha256": "7ae470ebb85f03faccc0fc1764b7d8c2b0ccf69f73320b29d8ca6dccdc8c7530",
+  "pending_runs": [],
+  "groups": [
+    {
+      "protocol": "original",
+      "condition": "sati_focal",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "status": "complete",
+      "n_test": 2033,
+      "mean_percent": [
+        60.86243646499426,
+        60.28427611152677,
+        56.00874780956943
+      ],
+      "sample_sd_percent": [
+        0.348971907751973,
+        0.33655883848608203,
+        0.39974532257866224
+      ],
+      "mask_generation_seed": null,
+      "mask_realizations": null
+    },
+    {
+      "protocol": "original",
+      "condition": "all_true_focal",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "status": "complete",
+      "n_test": 2033,
+      "mean_percent": [
+        61.10837842269225,
+        60.2552050862387,
+        55.628627513995156
+      ],
+      "sample_sd_percent": [
+        0.6228371835783755,
+        0.471834099045618,
+        1.109934396482451
+      ],
+      "mask_generation_seed": null,
+      "mask_realizations": null
+    },
+    {
+      "protocol": "original",
+      "condition": "no_prior_focal",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "status": "complete",
+      "n_test": 2033,
+      "mean_percent": [
+        60.87883259550746,
+        59.920947199038174,
+        54.83931025157213
+      ],
+      "sample_sd_percent": [
+        0.15027301836221849,
+        0.15292555101586222,
+        0.19633026607418758
+      ],
+      "mask_generation_seed": null,
+      "mask_realizations": null
+    },
+    {
+      "protocol": "original",
+      "condition": "density_matched_focal",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "status": "complete",
+      "n_test": 2033,
+      "mean_percent": [
+        60.3213641580587,
+        59.67936461420494,
+        54.87835976971921
+      ],
+      "sample_sd_percent": [
+        0.9854060797715509,
+        0.762507226184419,
+        0.9693317589438224
+      ],
+      "mask_generation_seed": 42,
+      "mask_realizations": 1
+    },
+    {
+      "protocol": "original",
+      "condition": "class_conditioned_focal",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "status": "complete",
+      "n_test": 2033,
+      "mean_percent": [
+        61.15756681423184,
+        60.39473100479346,
+        56.06152052623613
+      ],
+      "sample_sd_percent": [
+        0.6150188336944119,
+        0.48419264053034017,
+        0.9433586462049731
+      ],
+      "mask_generation_seed": 42,
+      "mask_realizations": 1
+    },
+    {
+      "protocol": "original",
+      "condition": "uncertainty_all_true_focal",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "status": "complete",
+      "n_test": 2033,
+      "mean_percent": [
+        61.23954746679784,
+        60.50046761222497,
+        55.91354578789859
+      ],
+      "sample_sd_percent": [
+        0.37136421226122435,
+        0.3570410166794859,
+        0.4660345564320002
+      ],
+      "mask_generation_seed": null,
+      "mask_realizations": null
+    },
+    {
+      "protocol": "original",
+      "condition": "pcgrad_all_true_focal",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "status": "complete",
+      "n_test": 2033,
+      "mean_percent": [
+        60.84604033448105,
+        59.948187403250174,
+        55.245079396890574
+      ],
+      "sample_sd_percent": [
+        0.2738693734790959,
+        0.516182997380791,
+        1.214397052426006
+      ],
+      "mask_generation_seed": null,
+      "mask_realizations": null
+    },
+    {
+      "protocol": "original",
+      "condition": "joint_class_mask42_focal",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "status": "complete",
+      "n_test": 2033,
+      "mean_percent": [
+        60.86243646499426,
+        60.09667984750347,
+        55.48819561772128
+      ],
+      "sample_sd_percent": [
+        0.6228371835783755,
+        0.36794837574686157,
+        0.3449416842299308
+      ],
+      "mask_generation_seed": 42,
+      "mask_realizations": 1
+    },
+    {
+      "protocol": "debiased",
+      "condition": "sati_focal",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "status": "complete",
+      "n_test": 896,
+      "mean_percent": [
+        24.29315476190476,
+        23.549813405068157,
+        20.525699568548117
+      ],
+      "sample_sd_percent": [
+        1.4736088035966057,
+        1.227405945523517,
+        0.7081366934040508
+      ],
+      "mask_generation_seed": null,
+      "mask_realizations": null
+    },
+    {
+      "protocol": "debiased",
+      "condition": "all_true_focal",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "status": "complete",
+      "n_test": 896,
+      "mean_percent": [
+        24.25595238095238,
+        22.817378677675094,
+        19.370351442006726
+      ],
+      "sample_sd_percent": [
+        0.6539581782457944,
+        1.9169597353096386,
+        2.948006444052884
+      ],
+      "mask_generation_seed": null,
+      "mask_realizations": null
+    },
+    {
+      "protocol": "debiased",
+      "condition": "no_prior_focal",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "status": "complete",
+      "n_test": 896,
+      "mean_percent": [
+        23.84672619047619,
+        21.500082429143042,
+        16.89322297679189
+      ],
+      "sample_sd_percent": [
+        1.4394004555173432,
+        2.655028295738469,
+        3.080513078906377
+      ],
+      "mask_generation_seed": null,
+      "mask_realizations": null
+    },
+    {
+      "protocol": "debiased",
+      "condition": "joint_class_mask42_focal",
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "status": "complete",
+      "n_test": 896,
+      "mean_percent": [
+        23.623511904761905,
+        21.636551854659167,
+        17.027454191023153
+      ],
+      "sample_sd_percent": [
+        0.9089874793802551,
+        1.783689731721285,
+        2.3969955519869686
+      ],
+      "mask_generation_seed": 42,
+      "mask_realizations": 1
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "paired_seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "per_seed": [
+        {
+          "seed": 42,
+          "delta_percentage_points": [
+            -0.34431874077717195,
+            -0.19698189680961153,
+            -0.21075880939517289
+          ],
+          "left_only_correct": 57,
+          "right_only_correct": 64,
+          "mcnemar_two_sided_exact_p": 0.5856255178555001
+        },
+        {
+          "seed": 43,
+          "delta_percentage_points": [
+            0.3935071323167727,
+            0.4092357667425883,
+            0.1825822228463947
+          ],
+          "left_only_correct": 36,
+          "right_only_correct": 28,
+          "mcnemar_two_sided_exact_p": 0.38173279479333766
+        },
+        {
+          "seed": 44,
+          "delta_percentage_points": [
+            -0.7870142646335454,
+            -0.1250407940687981,
+            1.1685374732715914
+          ],
+          "left_only_correct": 84,
+          "right_only_correct": 100,
+          "mcnemar_two_sided_exact_p": 0.26875982532443987
+        }
+      ],
+      "bootstrap_interval": {
+        "method": "Paired percentile bootstrap, shared test-example resampling and paired seed resampling",
+        "repetitions": 5000,
+        "random_seed": 20261007,
+        "lower_95_percentage_points": [
+          -1.3280865715691093,
+          -0.908166387778234,
+          -0.9761520075793239
+        ],
+        "upper_95_percentage_points": [
+          0.6558452205279546,
+          0.8772825397752544,
+          1.8037159298154324
+        ],
+        "caution": "Approximate exploratory uncertainty with only three training seeds; not a proof of equivalence or broad superiority."
+      },
+      "status": "complete",
+      "mean_delta_percentage_points": [
+        -0.24594195769798155,
+        0.029071025288059566,
+        0.38012029557427107
+      ],
+      "sd_delta_percentage_points": [
+        0.5963775530242065,
+        0.33119149075690724,
+        0.7105494539279946
+      ],
+      "protocol": "original",
+      "left": "sati_focal",
+      "right": "all_true_focal"
+    },
+    {
+      "paired_seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "per_seed": [
+        {
+          "seed": 42,
+          "delta_percentage_points": [
+            0.1967535661583919,
+            0.5018714146758141,
+            1.3306224523601196
+          ],
+          "left_only_correct": 63,
+          "right_only_correct": 59,
+          "mcnemar_two_sided_exact_p": 0.7860578568938605
+        },
+        {
+          "seed": 43,
+          "delta_percentage_points": [
+            0.04918839153960075,
+            0.5163798706367739,
+            1.5253285460233412
+          ],
+          "left_only_correct": 80,
+          "right_only_correct": 79,
+          "mcnemar_two_sided_exact_p": 1.0
+        },
+        {
+          "seed": 44,
+          "delta_percentage_points": [
+            -0.2951303492375823,
+            0.07173545215317656,
+            0.652361675608415
+          ],
+          "left_only_correct": 66,
+          "right_only_correct": 72,
+          "mcnemar_two_sided_exact_p": 0.6705341002455002
+        }
+      ],
+      "bootstrap_interval": {
+        "method": "Paired percentile bootstrap, shared test-example resampling and paired seed resampling",
+        "repetitions": 5000,
+        "random_seed": 20261008,
+        "lower_95_percentage_points": [
+          -0.9181833087391327,
+          -0.5212030599347528,
+          -0.08645858430989944
+        ],
+        "upper_95_percentage_points": [
+          0.8689949171995393,
+          1.236235125289353,
+          2.4361483722584314
+        ],
+        "caution": "Approximate exploratory uncertainty with only three training seeds; not a proof of equivalence or broad superiority."
+      },
+      "status": "complete",
+      "mean_delta_percentage_points": [
+        -0.01639613051319655,
+        0.36332891248858823,
+        1.1694375579972918
+      ],
+      "sd_delta_percentage_points": [
+        0.2524152208286752,
+        0.2526315170487982,
+        0.4582610793407777
+      ],
+      "protocol": "original",
+      "left": "sati_focal",
+      "right": "no_prior_focal"
+    },
+    {
+      "paired_seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "per_seed": [
+        {
+          "seed": 42,
+          "delta_percentage_points": [
+            1.6724053123462923,
+            1.6067238444185783,
+            2.4220864960911803
+          ],
+          "left_only_correct": 89,
+          "right_only_correct": 55,
+          "mcnemar_two_sided_exact_p": 0.005768823852925224
+        },
+        {
+          "seed": 43,
+          "delta_percentage_points": [
+            0.8362026561731462,
+            0.7784240915480023,
+            1.2501483797776158
+          ],
+          "left_only_correct": 66,
+          "right_only_correct": 49,
+          "mcnemar_two_sided_exact_p": 0.13535040983481547
+        },
+        {
+          "seed": 44,
+          "delta_percentage_points": [
+            -0.8853910477127358,
+            -0.5704134440010722,
+            -0.28107075631816913
+          ],
+          "left_only_correct": 50,
+          "right_only_correct": 68,
+          "mcnemar_two_sided_exact_p": 0.11721294197631507
+        }
+      ],
+      "bootstrap_interval": {
+        "method": "Paired percentile bootstrap, shared test-example resampling and paired seed resampling",
+        "repetitions": 5000,
+        "random_seed": 20261009,
+        "lower_95_percentage_points": [
+          -1.0001639613051265,
+          -0.7529262118796414,
+          -0.5481194785426047
+        ],
+        "upper_95_percentage_points": [
+          1.9675356615838673,
+          1.9229506826350904,
+          2.902561199079291
+        ],
+        "caution": "Approximate exploratory uncertainty with only three training seeds; not a proof of equivalence or broad superiority."
+      },
+      "status": "complete",
+      "mean_delta_percentage_points": [
+        0.5410723069355676,
+        0.6049114973218361,
+        1.1303880398502089
+      ],
+      "sd_delta_percentage_points": [
+        1.3041882521950674,
+        1.0988911039876235,
+        1.3555521705482094
+      ],
+      "protocol": "original",
+      "left": "sati_focal",
+      "right": "density_matched_focal"
+    },
+    {
+      "paired_seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "per_seed": [
+        {
+          "seed": 42,
+          "delta_percentage_points": [
+            -0.5410723069355639,
+            -0.3362303341176931,
+            -0.6372592432665636
+          ],
+          "left_only_correct": 52,
+          "right_only_correct": 63,
+          "mcnemar_two_sided_exact_p": 0.3511253697554317
+        },
+        {
+          "seed": 43,
+          "delta_percentage_points": [
+            0.24594195769798155,
+            0.3307558507564923,
+            -0.00044176151788866136
+          ],
+          "left_only_correct": 70,
+          "right_only_correct": 65,
+          "mcnemar_two_sided_exact_p": 0.7307894394358098
+        },
+        {
+          "seed": 44,
+          "delta_percentage_points": [
+            -0.5902606984751535,
+            -0.3258901964388605,
+            0.4793828547843382
+          ],
+          "left_only_correct": 53,
+          "right_only_correct": 65,
+          "mcnemar_two_sided_exact_p": 0.3112309933213218
+        }
+      ],
+      "bootstrap_interval": {
+        "method": "Paired percentile bootstrap, shared test-example resampling and paired seed resampling",
+        "repetitions": 5000,
+        "random_seed": 20261010,
+        "lower_95_percentage_points": [
+          -1.2461059190031119,
+          -1.0171657847976179,
+          -1.2613009942097297
+        ],
+        "upper_95_percentage_points": [
+          0.6066568289883575,
+          0.775032690535398,
+          1.1369235646287834
+        ],
+        "caution": "Approximate exploratory uncertainty with only three training seeds; not a proof of equivalence or broad superiority."
+      },
+      "status": "complete",
+      "mean_delta_percentage_points": [
+        -0.29513034923757864,
+        -0.11045489326668712,
+        -0.05277271666670469
+      ],
+      "sd_delta_percentage_points": [
+        0.469227349442666,
+        0.38213468841878245,
+        0.5601573800593638
+      ],
+      "protocol": "original",
+      "left": "sati_focal",
+      "right": "class_conditioned_focal"
+    },
+    {
+      "paired_seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "per_seed": [
+        {
+          "seed": 42,
+          "delta_percentage_points": [
+            -0.04918839153958965,
+            0.2145345017093181,
+            0.5392839668635796
+          ],
+          "left_only_correct": 57,
+          "right_only_correct": 58,
+          "mcnemar_two_sided_exact_p": 1.0
+        },
+        {
+          "seed": 43,
+          "delta_percentage_points": [
+            -0.04918839153960075,
+            0.10999628344167123,
+            0.6178071565194676
+          ],
+          "left_only_correct": 47,
+          "right_only_correct": 48,
+          "mcnemar_two_sided_exact_p": 1.0
+        },
+        {
+          "seed": 44,
+          "delta_percentage_points": [
+            -1.032956222331527,
+            -0.9731052872455792,
+            -0.8714850583705247
+          ],
+          "left_only_correct": 28,
+          "right_only_correct": 49,
+          "mcnemar_two_sided_exact_p": 0.02203345876482212
+        }
+      ],
+      "bootstrap_interval": {
+        "method": "Paired percentile bootstrap, shared test-example resampling and paired seed resampling",
+        "repetitions": 5000,
+        "random_seed": 20261011,
+        "lower_95_percentage_points": [
+          -1.2133136579767188,
+          -1.1032243083363935,
+          -1.065848353655028
+        ],
+        "upper_95_percentage_points": [
+          0.5574684374487604,
+          0.7748767587575416,
+          1.4562460790947476
+        ],
+        "caution": "Approximate exploratory uncertainty with only three training seeds; not a proof of equivalence or broad superiority."
+      },
+      "status": "complete",
+      "mean_delta_percentage_points": [
+        -0.3771110018035725,
+        -0.21619150069819662,
+        0.09520202167084083
+      ],
+      "sd_delta_percentage_points": [
+        0.567978621927816,
+        0.657587195715341,
+        0.8380957020935078
+      ],
+      "protocol": "original",
+      "left": "sati_focal",
+      "right": "uncertainty_all_true_focal"
+    },
+    {
+      "paired_seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "per_seed": [
+        {
+          "seed": 42,
+          "delta_percentage_points": [
+            0.14756517461879115,
+            0.3174580142744854,
+            0.41930239770117117
+          ],
+          "left_only_correct": 59,
+          "right_only_correct": 56,
+          "mcnemar_two_sided_exact_p": 0.8521555266297131
+        },
+        {
+          "seed": 43,
+          "delta_percentage_points": [
+            0.24594195769798155,
+            0.9735848076152909,
+            2.2998636901728875
+          ],
+          "left_only_correct": 84,
+          "right_only_correct": 79,
+          "mcnemar_two_sided_exact_p": 0.7541603898054375
+        },
+        {
+          "seed": 44,
+          "delta_percentage_points": [
+            -0.34431874077717195,
+            -0.2827766970599721,
+            -0.4281608498375
+          ],
+          "left_only_correct": 30,
+          "right_only_correct": 37,
+          "mcnemar_two_sided_exact_p": 0.4638176178968696
+        }
+      ],
+      "bootstrap_interval": {
+        "method": "Paired percentile bootstrap, shared test-example resampling and paired seed resampling",
+        "repetitions": 5000,
+        "random_seed": 20261012,
+        "lower_95_percentage_points": [
+          -0.7870142646335454,
+          -0.5726685703511737,
+          -0.7413517534425388
+        ],
+        "upper_95_percentage_points": [
+          0.9017871782259398,
+          1.4284755398082998,
+          2.683199217122646
+        ],
+        "caution": "Approximate exploratory uncertainty with only three training seeds; not a proof of equivalence or broad superiority."
+      },
+      "status": "complete",
+      "mean_delta_percentage_points": [
+        0.016396130513200248,
+        0.3360887082766014,
+        0.7636684126788529
+      ],
+      "sd_delta_percentage_points": [
+        0.31623711300189744,
+        0.6283879253110478,
+        1.396234377505592
+      ],
+      "protocol": "original",
+      "left": "sati_focal",
+      "right": "pcgrad_all_true_focal"
+    },
+    {
+      "paired_seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "per_seed": [
+        {
+          "seed": 42,
+          "delta_percentage_points": [
+            -0.0983767830791904,
+            0.14671589143296915,
+            0.44410188955691376
+          ],
+          "left_only_correct": 70,
+          "right_only_correct": 72,
+          "mcnemar_two_sided_exact_p": 0.9331607923848083
+        },
+        {
+          "seed": 43,
+          "delta_percentage_points": [
+            0.6394490900147543,
+            0.6108466223640474,
+            0.787107832311229
+          ],
+          "left_only_correct": 59,
+          "right_only_correct": 46,
+          "mcnemar_two_sided_exact_p": 0.24143171756517745
+        },
+        {
+          "seed": 44,
+          "delta_percentage_points": [
+            -0.5410723069355639,
+            -0.19477372172711505,
+            0.3304468536762917
+          ],
+          "left_only_correct": 58,
+          "right_only_correct": 69,
+          "mcnemar_two_sided_exact_p": 0.3749570506813295
+        }
+      ],
+      "bootstrap_interval": {
+        "method": "Paired percentile bootstrap, shared test-example resampling and paired seed resampling",
+        "repetitions": 5000,
+        "random_seed": 20261013,
+        "lower_95_percentage_points": [
+          -1.0001639613051265,
+          -0.7151157589342674,
+          -0.5334635559572246
+        ],
+        "upper_95_percentage_points": [
+          0.9673717002787333,
+          1.0761676605235673,
+          1.6141546209294624
+        ],
+        "caution": "Approximate exploratory uncertainty with only three training seeds; not a proof of equivalence or broad superiority."
+      },
+      "status": "complete",
+      "mean_delta_percentage_points": [
+        0.0,
+        0.18759626402330049,
+        0.5205521918481448
+      ],
+      "sd_delta_percentage_points": [
+        0.5963775530242065,
+        0.4043630031923469,
+        0.23773577537314433
+      ],
+      "protocol": "original",
+      "left": "sati_focal",
+      "right": "joint_class_mask42_focal"
+    },
+    {
+      "paired_seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "per_seed": [
+        {
+          "seed": 42,
+          "delta_percentage_points": [
+            0.8928571428571452,
+            0.3287045597678451,
+            -0.8242759218547391
+          ],
+          "left_only_correct": 44,
+          "right_only_correct": 36,
+          "mcnemar_two_sided_exact_p": 0.4340422553454787
+        },
+        {
+          "seed": 43,
+          "delta_percentage_points": [
+            -1.0044642857142878,
+            1.781659154151824,
+            4.437430737695655
+          ],
+          "left_only_correct": 74,
+          "right_only_correct": 83,
+          "mcnemar_two_sided_exact_p": 0.5233007934374074
+        },
+        {
+          "seed": 44,
+          "delta_percentage_points": [
+            0.2232142857142877,
+            0.08694046825952484,
+            -0.14711043621673803
+          ],
+          "left_only_correct": 42,
+          "right_only_correct": 40,
+          "mcnemar_two_sided_exact_p": 0.9121566075526039
+        }
+      ],
+      "bootstrap_interval": {
+        "method": "Paired percentile bootstrap, shared test-example resampling and paired seed resampling",
+        "repetitions": 5000,
+        "random_seed": 20261107,
+        "lower_95_percentage_points": [
+          -2.0089285714285716,
+          -1.0235451892158263,
+          -1.6451867664864905
+        ],
+        "upper_95_percentage_points": [
+          1.8610491071428463,
+          2.8302082746588155,
+          4.7135566137649505
+        ],
+        "caution": "Approximate exploratory uncertainty with only three training seeds; not a proof of equivalence or broad superiority."
+      },
+      "status": "complete",
+      "mean_delta_percentage_points": [
+        0.03720238095238175,
+        0.7324347273930647,
+        1.1553481265413925
+      ],
+      "sd_delta_percentage_points": [
+        0.9622408598495233,
+        0.9166604563665578,
+        2.8624618728579994
+      ],
+      "protocol": "debiased",
+      "left": "sati_focal",
+      "right": "all_true_focal"
+    },
+    {
+      "paired_seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "per_seed": [
+        {
+          "seed": 42,
+          "delta_percentage_points": [
+            0.4464285714285754,
+            0.38049303413265345,
+            0.7933763543181566
+          ],
+          "left_only_correct": 29,
+          "right_only_correct": 25,
+          "mcnemar_two_sided_exact_p": 0.6834892282353375
+        },
+        {
+          "seed": 43,
+          "delta_percentage_points": [
+            -0.4464285714285726,
+            2.8941607551468627,
+            6.057122066390794
+          ],
+          "left_only_correct": 84,
+          "right_only_correct": 88,
+          "mcnemar_two_sided_exact_p": 0.8191472524347487
+        },
+        {
+          "seed": 44,
+          "delta_percentage_points": [
+            1.339285714285715,
+            2.8745391384958268,
+            4.046931354559718
+          ],
+          "left_only_correct": 75,
+          "right_only_correct": 63,
+          "mcnemar_two_sided_exact_p": 0.34911516637678086
+        }
+      ],
+      "bootstrap_interval": {
+        "method": "Paired percentile bootstrap, shared test-example resampling and paired seed resampling",
+        "repetitions": 5000,
+        "random_seed": 20261108,
+        "lower_95_percentage_points": [
+          -1.7122395833333341,
+          -0.11319408659976751,
+          0.6291328520128824
+        ],
+        "upper_95_percentage_points": [
+          2.492559523809525,
+          4.4147649951401835,
+          6.90259815448128
+        ],
+        "caution": "Approximate exploratory uncertainty with only three training seeds; not a proof of equivalence or broad superiority."
+      },
+      "status": "complete",
+      "mean_delta_percentage_points": [
+        0.4464285714285726,
+        2.0497309759251143,
+        3.632476591756223
+      ],
+      "sd_delta_percentage_points": [
+        0.8928571428571439,
+        1.445635753466152,
+        2.656234984550246
+      ],
+      "protocol": "debiased",
+      "left": "sati_focal",
+      "right": "no_prior_focal"
+    },
+    {
+      "paired_seeds": [
+        42,
+        43,
+        44
+      ],
+      "required_seeds": [
+        42,
+        43,
+        44
+      ],
+      "per_seed": [
+        {
+          "seed": 42,
+          "delta_percentage_points": [
+            1.2276785714285725,
+            2.056097480921279,
+            3.36586381114114
+          ],
+          "left_only_correct": 59,
+          "right_only_correct": 48,
+          "mcnemar_two_sided_exact_p": 0.333705116197439
+        },
+        {
+          "seed": 43,
+          "delta_percentage_points": [
+            -0.2232142857142877,
+            2.9784118589669424,
+            6.287318262703784
+          ],
+          "left_only_correct": 83,
+          "right_only_correct": 85,
+          "mcnemar_two_sided_exact_p": 0.9385334053887997
+        },
+        {
+          "seed": 44,
+          "delta_percentage_points": [
+            1.0044642857142878,
+            0.7052753113387572,
+            0.8415540587299652
+          ],
+          "left_only_correct": 38,
+          "right_only_correct": 29,
+          "mcnemar_two_sided_exact_p": 0.3284320626971899
+        }
+      ],
+      "bootstrap_interval": {
+        "method": "Paired percentile bootstrap, shared test-example resampling and paired seed resampling",
+        "repetitions": 5000,
+        "random_seed": 20261109,
+        "lower_95_percentage_points": [
+          -1.4880952380952364,
+          -0.043923589620941915,
+          0.5717239355716573
+        ],
+        "upper_95_percentage_points": [
+          2.5669642857142847,
+          4.204236376990641,
+          6.685610270672994
+        ],
+        "caution": "Approximate exploratory uncertainty with only three training seeds; not a proof of equivalence or broad superiority."
+      },
+      "status": "complete",
+      "mean_delta_percentage_points": [
+        0.6696428571428575,
+        1.913261550408993,
+        3.498245377524963
+      ],
+      "sd_delta_percentage_points": [
+        0.7812500000000019,
+        1.1432799387397334,
+        2.7252945897020613
+      ],
+      "protocol": "debiased",
+      "left": "sati_focal",
+      "right": "joint_class_mask42_focal"
+    }
+  ],
+  "runs": [
+    {
+      "round": "previous",
+      "name": "sati_focal_seed42",
+      "protocol": "original",
+      "condition": "sati_focal",
+      "seed": 42,
+      "prediction_sha256": "0659712df899b39c94d3ed82ea4a44b0e86de75d8f10ab49c8b7e98b198747a5",
+      "metrics_percent": [
+        61.23954746679784,
+        60.5973971623345,
+        56.32370887444771
+      ],
+      "epochs_completed": 41
+    },
+    {
+      "round": "previous",
+      "name": "all_true_focal_seed42",
+      "protocol": "original",
+      "condition": "all_true_focal",
+      "seed": 42,
+      "prediction_sha256": "c48b2e1f2e3f662e9ad7b9bb95c8473d1049b38f9e204870666625a9498599a6",
+      "metrics_percent": [
+        61.583866207575014,
+        60.79437905914411,
+        56.534467683842884
+      ],
+      "epochs_completed": 40
+    },
+    {
+      "round": "previous",
+      "name": "no_prior_focal_seed42",
+      "protocol": "original",
+      "condition": "no_prior_focal",
+      "seed": 42,
+      "prediction_sha256": "37b1f94700586a669effc33ea386d2ea8cb0f7a2d6edfcc7252e042f126e30f2",
+      "metrics_percent": [
+        61.042793900639445,
+        60.095525747658684,
+        54.993086422087586
+      ],
+      "epochs_completed": 40
+    },
+    {
+      "round": "previous",
+      "name": "sati_focal_seed43",
+      "protocol": "original",
+      "condition": "sati_focal",
+      "seed": 43,
+      "prediction_sha256": "557d6c8dae3c560270dd71a5d27a06f8b2a6e7c8fac64fd98e8512b8c53d7376",
+      "metrics_percent": [
+        60.796851942941466,
+        60.327060155697545,
+        56.143493163443544
+      ],
+      "epochs_completed": 40
+    },
+    {
+      "round": "previous",
+      "name": "all_true_focal_seed43",
+      "protocol": "original",
+      "condition": "all_true_focal",
+      "seed": 43,
+      "prediction_sha256": "fb315487dab7af067584c209320212f72cd84caf70ffa07a64865cf0e391e83a",
+      "metrics_percent": [
+        60.403344810624695,
+        59.917824388954955,
+        55.96091094059715
+      ],
+      "epochs_completed": 40
+    },
+    {
+      "round": "previous",
+      "name": "no_prior_focal_seed43",
+      "protocol": "original",
+      "condition": "no_prior_focal",
+      "seed": 43,
+      "prediction_sha256": "8dc631de6945cfc37c8c15b053c7adec22a79dee62479a94aa353fb381453f8f",
+      "metrics_percent": [
+        60.747663551401864,
+        59.81068028506077,
+        54.618164617420206
+      ],
+      "epochs_completed": 36
+    },
+    {
+      "round": "previous",
+      "name": "sati_focal_seed44",
+      "protocol": "original",
+      "condition": "sati_focal",
+      "seed": 44,
+      "prediction_sha256": "9f5795b773030d9149a519fd1d344d4f8b5b8ca9af4ff0389b13bf23a2a15eea",
+      "metrics_percent": [
+        60.550909985243486,
+        59.92837101654827,
+        55.55904139081702
+      ],
+      "epochs_completed": 41
+    },
+    {
+      "round": "previous",
+      "name": "all_true_focal_seed44",
+      "protocol": "original",
+      "condition": "all_true_focal",
+      "seed": 44,
+      "prediction_sha256": "8f027ab1df292eb1425d3769bd13e3b20a808067ba99cb1bf28fbba5f292ea32",
+      "metrics_percent": [
+        61.33792424987703,
+        60.053411810617064,
+        54.39050391754543
+      ],
+      "epochs_completed": 35
+    },
+    {
+      "round": "previous",
+      "name": "no_prior_focal_seed44",
+      "protocol": "original",
+      "condition": "no_prior_focal",
+      "seed": 44,
+      "prediction_sha256": "419740af7672b177b94a7c7ac9346da98094725e7513346f1c0d19f3f789bc2b",
+      "metrics_percent": [
+        60.84604033448107,
+        59.85663556439509,
+        54.906679715208604
+      ],
+      "epochs_completed": 38
+    },
+    {
+      "round": "previous",
+      "name": "density_matched_focal_seed42",
+      "protocol": "original",
+      "condition": "density_matched_focal",
+      "seed": 42,
+      "prediction_sha256": "98f26c24b3c2326c591d927a5f04bac0265d3faf77a6ff7f55271334a042a0f0",
+      "metrics_percent": [
+        59.567142154451545,
+        58.99067331791592,
+        53.90162237835653
+      ],
+      "epochs_completed": 53
+    },
+    {
+      "round": "previous",
+      "name": "class_conditioned_focal_seed42",
+      "protocol": "original",
+      "condition": "class_conditioned_focal",
+      "seed": 42,
+      "prediction_sha256": "0e386332cc59ecbee7331ee80d2c11791493b0a217a0aac8ceb3bee6f08f9f60",
+      "metrics_percent": [
+        61.780619773733406,
+        60.93362749645219,
+        56.96096811771427
+      ],
+      "epochs_completed": 40
+    },
+    {
+      "round": "previous",
+      "name": "debiased_sati_focal_seed42",
+      "protocol": "debiased",
+      "condition": "sati_focal",
+      "seed": 42,
+      "prediction_sha256": "97d0b962bc272a3893c56cef403437e221b06805b7ff1b824362005b11314edf",
+      "metrics_percent": [
+        25.892857142857146,
+        24.92651549849463,
+        21.179973206732672
+      ],
+      "epochs_completed": 49
+    },
+    {
+      "round": "previous",
+      "name": "debiased_all_true_focal_seed42",
+      "protocol": "debiased",
+      "condition": "all_true_focal",
+      "seed": 42,
+      "prediction_sha256": "822c1c1aa06131e4c4f722e6c22aa15322ee6c94b4e2d8be00e5b5c664ef4481",
+      "metrics_percent": [
+        25.0,
+        24.597810938726784,
+        22.00424912858741
+      ],
+      "epochs_completed": 65
+    },
+    {
+      "round": "previous",
+      "name": "debiased_no_prior_focal_seed42",
+      "protocol": "debiased",
+      "condition": "no_prior_focal",
+      "seed": 42,
+      "prediction_sha256": "23351dbe1995bfd64af9cbb37422034b461cfa838332eace5fdccf40ab2ca8c7",
+      "metrics_percent": [
+        25.44642857142857,
+        24.54602246436198,
+        20.386596852414517
+      ],
+      "epochs_completed": 44
+    },
+    {
+      "round": "previous",
+      "name": "debiased_sati_focal_seed43",
+      "protocol": "debiased",
+      "condition": "sati_focal",
+      "seed": 43,
+      "prediction_sha256": "8269130f4a1b17d267193c433ae4e8a9a2a84624aa6ca9587fa8ffce68f7606f",
+      "metrics_percent": [
+        22.991071428571427,
+        22.56983954619364,
+        20.623300411228115
+      ],
+      "epochs_completed": 60
+    },
+    {
+      "round": "previous",
+      "name": "debiased_all_true_focal_seed43",
+      "protocol": "debiased",
+      "condition": "all_true_focal",
+      "seed": 43,
+      "prediction_sha256": "5878ee48a057dc298c7ff15e298543180819576647db44caf34f849ffe281e20",
+      "metrics_percent": [
+        23.995535714285715,
+        20.788180392041816,
+        16.18586967353246
+      ],
+      "epochs_completed": 36
+    },
+    {
+      "round": "previous",
+      "name": "debiased_no_prior_focal_seed43",
+      "protocol": "debiased",
+      "condition": "no_prior_focal",
+      "seed": 43,
+      "prediction_sha256": "802a8015878d66b20f1ed676e13451d31497a6b187803299870c0794e0e0e594",
+      "metrics_percent": [
+        23.4375,
+        19.675678791046778,
+        14.566178344837322
+      ],
+      "epochs_completed": 35
+    },
+    {
+      "round": "previous",
+      "name": "debiased_sati_focal_seed44",
+      "protocol": "debiased",
+      "condition": "sati_focal",
+      "seed": 44,
+      "prediction_sha256": "3e733a107ba414fa84cacecfebe6c08f2ff3d4fe0f7587af70e07c8cada35771",
+      "metrics_percent": [
+        23.995535714285715,
+        23.153085170516203,
+        19.773825087683562
+      ],
+      "epochs_completed": 47
+    },
+    {
+      "round": "previous",
+      "name": "debiased_all_true_focal_seed44",
+      "protocol": "debiased",
+      "condition": "all_true_focal",
+      "seed": 44,
+      "prediction_sha256": "0dd2b8b52e7d5f7b8a5e9e81705c181b69596f859ceae9a4ab46b6a86f33da41",
+      "metrics_percent": [
+        23.772321428571427,
+        23.06614470225668,
+        19.920935523900297
+      ],
+      "epochs_completed": 41
+    },
+    {
+      "round": "previous",
+      "name": "debiased_no_prior_focal_seed44",
+      "protocol": "debiased",
+      "condition": "no_prior_focal",
+      "seed": 44,
+      "prediction_sha256": "3b8169f4b2469e4bc401eede527303ab2e308d923a01e8f19b1f32f45a843da9",
+      "metrics_percent": [
+        22.65625,
+        20.278546032020376,
+        15.726893733123843
+      ],
+      "epochs_completed": 35
+    },
+    {
+      "round": "previous",
+      "name": "uncertainty_all_true_focal_seed42",
+      "protocol": "original",
+      "condition": "uncertainty_all_true_focal",
+      "seed": 42,
+      "prediction_sha256": "1b5b1b7eaf4efa658eb2697cb538f6334e7c6ef5978af78c71286c0adc56e3b3",
+      "metrics_percent": [
+        61.28873585833743,
+        60.38286266062518,
+        55.78442490758413
+      ],
+      "epochs_completed": 40
+    },
+    {
+      "round": "previous",
+      "name": "pcgrad_all_true_focal_seed42",
+      "protocol": "original",
+      "condition": "pcgrad_all_true_focal",
+      "seed": 42,
+      "prediction_sha256": "2d7dc036d7e4c803055508a8e2b6df48f0d0212ef14df0d7663be4606445721b",
+      "metrics_percent": [
+        61.09198229217905,
+        60.279939148060016,
+        55.90440647674654
+      ],
+      "epochs_completed": 40
+    },
+    {
+      "round": "second",
+      "name": "density_matched_focal_seed43",
+      "protocol": "original",
+      "condition": "density_matched_focal",
+      "seed": 43,
+      "prediction_sha256": "bd628a797931813894f8083079957364f34ca0e7a98f1a0e631b712d6d9cc8cf",
+      "metrics_percent": [
+        59.960649286768316,
+        59.54863606414954,
+        54.89334478366593
+      ],
+      "epochs_completed": 41
+    },
+    {
+      "round": "second",
+      "name": "class_conditioned_focal_seed43",
+      "protocol": "original",
+      "condition": "class_conditioned_focal",
+      "seed": 43,
+      "prediction_sha256": "1e75fa20d3daa8f73a9c149929d297294ad3245c112a9fb26d4f9f8afe9fc513",
+      "metrics_percent": [
+        60.550909985243486,
+        59.99630430494105,
+        56.143934924961435
+      ],
+      "epochs_completed": 43
+    },
+    {
+      "round": "second",
+      "name": "uncertainty_all_true_focal_seed43",
+      "protocol": "original",
+      "condition": "uncertainty_all_true_focal",
+      "seed": 43,
+      "prediction_sha256": "80f127ad672a040dbbd3832094f060c468cac91cb503d090ea2526affb227304",
+      "metrics_percent": [
+        60.84604033448107,
+        60.21706387225587,
+        55.52568600692408
+      ],
+      "epochs_completed": 40
+    },
+    {
+      "round": "second",
+      "name": "pcgrad_all_true_focal_seed43",
+      "protocol": "original",
+      "condition": "pcgrad_all_true_focal",
+      "seed": 43,
+      "prediction_sha256": "8dc7456dbd620c4e5ba27e0e8a07fd333266ed97779b1c9379b25a530409fe5d",
+      "metrics_percent": [
+        60.550909985243486,
+        59.35347534808225,
+        53.84362947327066
+      ],
+      "epochs_completed": 35
+    },
+    {
+      "round": "second",
+      "name": "density_matched_focal_seed44",
+      "protocol": "original",
+      "condition": "density_matched_focal",
+      "seed": 44,
+      "prediction_sha256": "35890177655cd237a6bda8239c76cff12c69353b9792fff5aab23d888a8a5a9f",
+      "metrics_percent": [
+        61.43630103295622,
+        60.49878446054934,
+        55.84011214713519
+      ],
+      "epochs_completed": 38
+    },
+    {
+      "round": "second",
+      "name": "class_conditioned_focal_seed44",
+      "protocol": "original",
+      "condition": "class_conditioned_focal",
+      "seed": 44,
+      "prediction_sha256": "e9f1cdefcabb2be23448032b9f752f1657e5ab97894f83ff0194f2b0d325b71e",
+      "metrics_percent": [
+        61.141170683718634,
+        60.254261212987124,
+        55.07965853603268
+      ],
+      "epochs_completed": 38
+    },
+    {
+      "round": "second",
+      "name": "uncertainty_all_true_focal_seed44",
+      "protocol": "original",
+      "condition": "uncertainty_all_true_focal",
+      "seed": 44,
+      "prediction_sha256": "3a32969a349d10c06bcd6c7e3a385028ab055435fb4ea2c02a6dea966dc0b0ed",
+      "metrics_percent": [
+        61.583866207575014,
+        60.90147630379384,
+        56.430526449187546
+      ],
+      "epochs_completed": 41
+    },
+    {
+      "round": "second",
+      "name": "pcgrad_all_true_focal_seed44",
+      "protocol": "original",
+      "condition": "pcgrad_all_true_focal",
+      "seed": 44,
+      "prediction_sha256": "d5df81af4ece1f8cefc935f2a0a5ab43f744760c6d0bc8713561dc1c7eec5edf",
+      "metrics_percent": [
+        60.895228726020655,
+        60.211147713608234,
+        55.98720224065452
+      ],
+      "epochs_completed": 41
+    },
+    {
+      "round": "second",
+      "name": "original_joint_class_mask42_focal_seed42",
+      "protocol": "original",
+      "condition": "joint_class_mask42_focal",
+      "seed": 42,
+      "prediction_sha256": "059cddba96ef694419d90dcd267b4c2a836b909ee977acf74d1489c013dbbcdd",
+      "metrics_percent": [
+        61.33792424987703,
+        60.450681270901526,
+        55.87960698489079
+      ],
+      "epochs_completed": 40
+    },
+    {
+      "round": "second",
+      "name": "original_joint_class_mask42_focal_seed43",
+      "protocol": "original",
+      "condition": "joint_class_mask42_focal",
+      "seed": 43,
+      "prediction_sha256": "0dbc756ee5d77119d708b73ad3894310533bc68bfac0ad21858e620c63a7fa23",
+      "metrics_percent": [
+        60.15740285292671,
+        59.716213533333494,
+        55.356385331132316
+      ],
+      "epochs_completed": 41
+    },
+    {
+      "round": "second",
+      "name": "original_joint_class_mask42_focal_seed44",
+      "protocol": "original",
+      "condition": "joint_class_mask42_focal",
+      "seed": 44,
+      "prediction_sha256": "773f95fde8823d603843ec1f0719896541c200e2d13f6122cf7c2bc04134fe0e",
+      "metrics_percent": [
+        61.09198229217905,
+        60.12314473827538,
+        55.22859453714073
+      ],
+      "epochs_completed": 38
+    },
+    {
+      "round": "second",
+      "name": "debiased_joint_class_mask42_focal_seed42",
+      "protocol": "debiased",
+      "condition": "joint_class_mask42_focal",
+      "seed": 42,
+      "prediction_sha256": "10ca5b693717c6abccdc409e7bd8426cef5a78d4527f803ecc1db9b3c5020003",
+      "metrics_percent": [
+        24.665178571428573,
+        22.870418017573353,
+        17.814109395591533
+      ],
+      "epochs_completed": 38
+    },
+    {
+      "round": "second",
+      "name": "debiased_joint_class_mask42_focal_seed43",
+      "protocol": "debiased",
+      "condition": "joint_class_mask42_focal",
+      "seed": 43,
+      "prediction_sha256": "2e7c583e6174177a641a98e5c461ac78e8f9e9d1e0731449cd60315362a2ca6e",
+      "metrics_percent": [
+        23.214285714285715,
+        19.591427687226698,
+        14.335982148524332
+      ],
+      "epochs_completed": 35
+    },
+    {
+      "round": "second",
+      "name": "debiased_joint_class_mask42_focal_seed44",
+      "protocol": "debiased",
+      "condition": "joint_class_mask42_focal",
+      "seed": 44,
+      "prediction_sha256": "958670667fa81773ad78c84ca54c9e47dc273eccc4656038e5ba5742de9fffb3",
+      "metrics_percent": [
+        22.991071428571427,
+        22.447809859177443,
+        18.932271028953597
+      ],
+      "epochs_completed": 41
+    }
+  ],
+  "cautions": [
+    "Three optimization seeds are not repeated mask or LLM generation.",
+    "Paired bootstrap intervals are pointwise and exploratory with only three seeds; no dialogue clustering or multiple comparison adjustment.",
+    "Partial groups have descriptive means only, no full three-seed bootstrap inference.",
+    "PCGrad acts only on the nonverbal projection union; uncertainty weighting is an all-sample adaptation.",
+    "Same ordinary best-validation-accuracy checkpoint protocol is retained."
+  ]
+}
