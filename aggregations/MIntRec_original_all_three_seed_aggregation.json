@@ -1,0 +1,55 @@
+{
+  "dataset": "MIntRec1 original",
+  "method": "all-sample auxiliary",
+  "n_test": 445,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "independent_local_audit_complete": true,
+  "runs": [
+    {
+      "name": "journal_mintrec1_all_seed42",
+      "metrics_percent": [
+        75.73033707865169,
+        75.44294535591504,
+        73.35909197119973
+      ],
+      "epochs_completed": 86
+    },
+    {
+      "name": "journal_mintrec1_all_seed43",
+      "metrics_percent": [
+        73.48314606741573,
+        73.39548621820455,
+        71.18173758505317
+      ],
+      "epochs_completed": 52
+    },
+    {
+      "name": "journal_mintrec1_all_seed44",
+      "metrics_percent": [
+        75.0561797752809,
+        74.9801082483875,
+        71.8646356874212
+      ],
+      "epochs_completed": 58
+    }
+  ],
+  "archive_sha256": "056cc9028b820a25cd408d226c06cde5486aa29c573ed0e0f2319adcf920317b",
+  "mean_percent": {
+    "ACC": 74.7565543071161,
+    "WF1": 74.6061799408357,
+    "MF1": 72.1351550812247
+  },
+  "sample_sd_percent": {
+    "ACC": 1.1531688627970522,
+    "WF1": 1.0737266945270383,
+    "MF1": 1.1135993837712812
+  },
+  "record_type": "final_method_aggregation",
+  "method_training_complete": true,
+  "source_receipt": "history/aggregations/MIntRec_original_all_source_receipt.json",
+  "source_receipt_sha256": "cad47b950dc9d0370be39816935c02870c2368feb7d3f490ba723815e05f996e"
+}

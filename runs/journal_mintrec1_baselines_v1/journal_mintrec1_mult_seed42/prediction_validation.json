@@ -1,0 +1,13 @@
+{
+  "n": 445,
+  "reproduced_saved_metrics": {
+    "acc": 0.7101123595505618,
+    "weighted_f1": 0.6977104972945961,
+    "f1": 0.6612372639829599
+  },
+  "checkpoint": "ordinary_best_dev_accuracy",
+  "auxiliary_masks_used_at_prediction": false,
+  "fixed_class_universe": 20,
+  "backbone": "pinned_official_mult_modern_training_adaptation",
+  "method": "mult"
+}

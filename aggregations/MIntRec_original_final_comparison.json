@@ -1,0 +1,56 @@
+{
+  "record_type": "final_comparison_index",
+  "dataset": "MIntRec original",
+  "n_test": 445,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "comparison_complete": true,
+  "methods": {
+    "misa": {
+      "file": "aggregations/MIntRec_original_misa_three_seed_aggregation.json",
+      "sha256": "e89022bfd0b83e7a808fcb9c1bbebec3c9b28f43da6432e735e9a4d2897f5894",
+      "mean_percent": {
+        "ACC": 72.65917602996255,
+        "WF1": 72.57494207144339,
+        "MF1": 68.6769083468648
+      },
+      "sample_sd_percent": {
+        "ACC": 0.565530669308673,
+        "WF1": 0.7700057161223178,
+        "MF1": 1.3829192969861124
+      }
+    },
+    "all": {
+      "file": "aggregations/MIntRec_original_all_three_seed_aggregation.json",
+      "sha256": "cb372f3701b587d0349aa21b5c50aea2f0aafcded5395d45f180b7e1d1dcaafb",
+      "mean_percent": {
+        "ACC": 74.7565543071161,
+        "WF1": 74.6061799408357,
+        "MF1": 72.1351550812247
+      },
+      "sample_sd_percent": {
+        "ACC": 1.1531688627970522,
+        "WF1": 1.0737266945270383,
+        "MF1": 1.1135993837712812
+      }
+    },
+    "sati": {
+      "file": "aggregations/MIntRec_original_sati_three_seed_aggregation.json",
+      "sha256": "c1fe9c59e2c744c2542b1520402fc1c2959fbfe9913cd6ae371d46ce56e40099",
+      "mean_percent": {
+        "ACC": 73.70786516853933,
+        "WF1": 73.33989613616221,
+        "MF1": 70.88079456134487
+      },
+      "sample_sd_percent": {
+        "ACC": 1.029792291001305,
+        "WF1": 1.1102398570268766,
+        "MF1": 1.6308597893866439
+      }
+    }
+  },
+  "note": "Derived from three independently audited method receipts; historical progress flags remain only in history. This index contains no new significance test."
+}

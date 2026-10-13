@@ -1,0 +1,15 @@
+{
+  "n": 2033,
+  "reproduced_saved_metrics": {
+    "acc": 0.58780127889818,
+    "weighted_f1": 0.5645097064706495,
+    "f1": 0.47635394284401217
+  },
+  "checkpoint": "ordinary_best_dev_accuracy",
+  "auxiliary_masks_used_at_prediction": false,
+  "fixed_class_universe": 30,
+  "backbone": "pinned_official_mult_modern_training_adaptation",
+  "padding_markers_preserved_in_zeroing": true,
+  "source_revision": "6bc239695df342c22c324bb3a76789fa295ff999",
+  "absolute_deadline": "2026-10-07T18:52:30.741701+00:00"
+}

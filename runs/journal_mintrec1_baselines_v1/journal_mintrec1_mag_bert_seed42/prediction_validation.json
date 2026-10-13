@@ -1,0 +1,13 @@
+{
+  "n": 445,
+  "reproduced_saved_metrics": {
+    "acc": 0.7325842696629213,
+    "weighted_f1": 0.7260065385274885,
+    "f1": 0.6934239512388941
+  },
+  "checkpoint": "ordinary_best_dev_accuracy",
+  "auxiliary_masks_used_at_prediction": false,
+  "fixed_class_universe": 20,
+  "backbone": "pinned_mag_bert_init_complete_adaptation",
+  "method": "mag_bert"
+}

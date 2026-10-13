@@ -1,0 +1,16 @@
+{
+  "n": 2033,
+  "reproduced_saved_metrics": {
+    "acc": 0.5951795376291196,
+    "weighted_f1": 0.5865045777146316,
+    "f1": 0.5297035780028987
+  },
+  "checkpoint": "ordinary_best_dev_accuracy",
+  "auxiliary_masks_used_at_prediction": false,
+  "alignment": "Native CTC-style soft alignment on zero-padded sequences; no timestamps or CTC supervision",
+  "fixed_class_universe": 30,
+  "backbone": "pinned_mag_bert_init_complete_adaptation",
+  "padding_markers_preserved_in_zeroing": true,
+  "source_revision": "6bc239695df342c22c324bb3a76789fa295ff999",
+  "absolute_deadline": "2026-10-08T04:28:35.250973+00:00"
+}

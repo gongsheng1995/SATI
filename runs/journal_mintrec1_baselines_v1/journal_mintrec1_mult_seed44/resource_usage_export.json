@@ -1,0 +1,7 @@
+{
+  "completed": true,
+  "measurement": "Torch allocator peak",
+  "peak_allocated_bytes": 1450363904,
+  "peak_reserved_bytes": 1474297856,
+  "measured_wall_seconds": 15.931992387399077
+}

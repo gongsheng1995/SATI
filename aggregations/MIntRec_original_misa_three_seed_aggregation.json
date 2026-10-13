@@ -1,0 +1,56 @@
+{
+  "prepared_at_utc": "2026-10-09T01:45:59.589681+00:00",
+  "dataset": "MIntRec1 original",
+  "method": "MISA20 true-length adaptation",
+  "n_test": 445,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "runs": [
+    {
+      "name": "journal_mintrec1_misa_seed42",
+      "metrics_percent": [
+        72.13483146067415,
+        71.73439097552432,
+        67.17933578872592
+      ],
+      "epochs_completed": 15
+    },
+    {
+      "name": "journal_mintrec1_misa_seed43",
+      "metrics_percent": [
+        72.58426966292136,
+        72.74419133746616,
+        68.94567055694543
+      ],
+      "epochs_completed": 19
+    },
+    {
+      "name": "journal_mintrec1_misa_seed44",
+      "metrics_percent": [
+        73.25842696629213,
+        73.24624390133967,
+        69.90571869492307
+      ],
+      "epochs_completed": 14
+    }
+  ],
+  "mean_percent": {
+    "ACC": 72.65917602996255,
+    "WF1": 72.57494207144339,
+    "MF1": 68.6769083468648
+  },
+  "sample_sd_percent": {
+    "ACC": 0.565530669308673,
+    "WF1": 0.7700057161223178,
+    "MF1": 1.3829192969861124
+  },
+  "independent_local_audit_complete": true,
+  "archive_sha256": "0b470851ebca7eb0b5e43f4bee5694b1f4358100939f561b0da26b9659bfe62a",
+  "record_type": "final_method_aggregation",
+  "method_training_complete": true,
+  "source_receipt": "history/aggregations/MIntRec_original_misa_source_receipt.json",
+  "source_receipt_sha256": "ed71f65a5fba1769c566d1b1499fdbf9669021b336868f5c46638b57fd7efca5"
+}

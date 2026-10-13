@@ -1,0 +1,8 @@
+{
+  "completed": true,
+  "measurement": "Torch process allocator peak, not total device VRAM or a sampled nvidia-smi peak",
+  "peak_allocated_bytes": 3075949056,
+  "peak_reserved_bytes": 3114270720,
+  "measured_wall_seconds": 73.58426803722978,
+  "absolute_deadline": "2026-10-08T06:52:26.076380+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "n": 2033,
+  "reproduced_saved_metrics": {
+    "acc": 0.5912444663059518,
+    "weighted_f1": 0.5916648341692685,
+    "f1": 0.5468652932266768
+  },
+  "checkpoint": "ordinary_best_dev_accuracy",
+  "auxiliary_masks_used_at_prediction": false,
+  "sequence_lengths": "True retained A/V lengths; no timestamp alignment",
+  "fixed_class_universe": 30,
+  "backbone": "pinned_misa_length_corrected_adaptation",
+  "padding_markers_preserved_in_zeroing": true,
+  "source_revision": "6bc239695df342c22c324bb3a76789fa295ff999",
+  "absolute_deadline": "2026-10-08T06:32:34.015990+00:00"
+}

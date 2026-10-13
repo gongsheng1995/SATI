@@ -1,0 +1,8 @@
+{
+  "completed": true,
+  "measurement": "Torch allocator peak, not total device VRAM",
+  "peak_allocated_bytes": 17949554176,
+  "peak_reserved_bytes": 18232639488,
+  "measured_wall_seconds": 1946.7607328519225,
+  "absolute_deadline": "2026-10-08T04:54:40.200513+00:00"
+}

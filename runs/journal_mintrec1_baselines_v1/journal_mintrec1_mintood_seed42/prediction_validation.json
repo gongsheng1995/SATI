@@ -1,0 +1,13 @@
+{
+  "n": 445,
+  "reproduced_saved_metrics": {
+    "acc": 0.748314606741573,
+    "weighted_f1": 0.7456054110041954,
+    "f1": 0.7194242323547757
+  },
+  "checkpoint": "ordinary_best_dev_accuracy",
+  "auxiliary_masks_used_at_prediction": false,
+  "fixed_class_universe": 20,
+  "backbone": "pinned_mintood_init_complete_adaptation",
+  "method": "mintood"
+}

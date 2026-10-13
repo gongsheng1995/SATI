@@ -1,0 +1,75 @@
+{
+  "aggregated_at_utc": "2026-10-09T16:59:50.959429+00:00",
+  "dataset": "MIntRec1 original",
+  "method": "SATI with audited BF16 v3 adapted train-only prior",
+  "n_test": 445,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "runs": [
+    {
+      "name": "journal_mintrec1_sati_seed42",
+      "metrics_percent": [
+        73.93258426966293,
+        73.70406336299683,
+        72.38149533092253
+      ],
+      "epochs_completed": 58,
+      "prediction_sha256": "26bbaff75f632ba6c561168505470656e243144bacdf5baa939ed655ecf2c6d5",
+      "seed": 42,
+      "n_test": 445
+    },
+    {
+      "name": "journal_mintrec1_sati_seed43",
+      "metrics_percent": [
+        72.58426966292136,
+        72.0933083126519,
+        69.14524036374368
+      ],
+      "epochs_completed": 42,
+      "prediction_sha256": "4ea7f08d448048c029225233a6e1bddc34421371c0d910fa1471dd31a93c88b3",
+      "seed": 43,
+      "n_test": 445
+    },
+    {
+      "name": "journal_mintrec1_sati_seed44",
+      "metrics_percent": [
+        74.6067415730337,
+        74.22231673283792,
+        71.1156479893684
+      ],
+      "epochs_completed": 46,
+      "prediction_sha256": "ae412f88edffda2cef4152dae7c113a5651addccbc9b0b1872bdaee1818bfd72",
+      "seed": 44,
+      "n_test": 445
+    }
+  ],
+  "mean_percent": {
+    "ACC": 73.70786516853933,
+    "WF1": 73.33989613616221,
+    "MF1": 70.88079456134487
+  },
+  "sample_sd_percent": {
+    "ACC": 1.029792291001305,
+    "WF1": 1.1102398570268766,
+    "MF1": 1.6308597893866439
+  },
+  "independent_local_audit_complete": true,
+  "metric_order": [
+    "ACC",
+    "WF1",
+    "MF1_fixed_20_classes"
+  ],
+  "seed_policy": "All three prespecified optimization seeds aggregated; no test-driven seed selection.",
+  "prior_provenance": {
+    "prior_sha256": "7ddbe6f1ff0ab33bfbfaa414c2dd2f35f81d8eff4740540deb8df0c3fb06a7a7",
+    "archive_sha256": "41b268dd9523b9be67534ac8ff827db8577a0f861d1e485b332a5539bc3fb3f5",
+    "disclosure": "train text and known labels; no observed audio/video; new adapted prior, not historical caption prior; no human semantic quality validation"
+  },
+  "record_type": "final_method_aggregation",
+  "method_training_complete": true,
+  "source_receipt": "history/aggregations/MIntRec_original_sati_source_receipt.json",
+  "source_receipt_sha256": "6d5083a23442f39a4a4fcd9029f4598937f27826a0471809f0df04ee5a064144"
+}

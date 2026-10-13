@@ -1,0 +1,339 @@
+{
+  "order": [
+    "ACC",
+    "MF1",
+    "macro_P",
+    "macro_R",
+    "WF1",
+    "weighted_P"
+  ],
+  "records": {
+    "mintrec1_mult": {
+      "runs": [
+        {
+          "path": "results/journal_mintrec1_baselines_v1/journal_mintrec1_mult_seed42",
+          "seed": 42,
+          "n_test": 445,
+          "classes": 20,
+          "metrics": [
+            71.01123595505618,
+            66.12372639829599,
+            73.80901807443927,
+            65.38981811699055,
+            69.7710497294596,
+            72.34655468874843
+          ],
+          "saved_secondary_metrics_percent": {
+            "prec": 73.80901807443927,
+            "rec": 65.38981811699055,
+            "weighted_p": 72.34655468874843
+          },
+          "prediction_sha256": "2f2520a74291ecbd8815e6d3dd6c98a479e68ff0fe912abad78beb6c24cf8946"
+        },
+        {
+          "path": "results/journal_mintrec1_baselines_v1/journal_mintrec1_mult_seed43",
+          "seed": 43,
+          "n_test": 445,
+          "classes": 20,
+          "metrics": [
+            74.38202247191012,
+            70.82943163207871,
+            73.69034489260473,
+            69.94010583936408,
+            73.83136045391778,
+            74.51710055401986
+          ],
+          "saved_secondary_metrics_percent": {
+            "prec": 73.69034489260473,
+            "rec": 69.94010583936408,
+            "weighted_p": 74.51710055401986
+          },
+          "prediction_sha256": "8a1a01fc6eccdad06d5fd975fc096bad2494c6bc259c1f3613ae8f19bafe895f"
+        },
+        {
+          "path": "results/journal_mintrec1_baselines_v1/journal_mintrec1_mult_seed44",
+          "seed": 44,
+          "n_test": 445,
+          "classes": 20,
+          "metrics": [
+            73.03370786516854,
+            69.86523654690096,
+            70.40235273184281,
+            70.45263478125563,
+            73.11018793339937,
+            74.15476114057705
+          ],
+          "saved_secondary_metrics_percent": {
+            "prec": 70.40235273184281,
+            "rec": 70.45263478125563,
+            "weighted_p": 74.15476114057705
+          },
+          "prediction_sha256": "49985690e07912aed898c6fd32c84c35e80c56d2c63502019d4dc218f2821151"
+        }
+      ],
+      "mean": [
+        72.80898876404494,
+        68.9394648590919,
+        72.63390523296226,
+        68.59418624587009,
+        72.23753270559226,
+        73.67280546111512
+      ],
+      "sd": [
+        1.6965920079260146,
+        2.4857001730446444,
+        1.933491855416273,
+        2.7868715090766747,
+        2.1662585613799297,
+        1.162767515901586
+      ]
+    },
+    "mintrec1_mag_bert": {
+      "runs": [
+        {
+          "path": "results/journal_mintrec1_baselines_v1/journal_mintrec1_mag_bert_seed42",
+          "seed": 42,
+          "n_test": 445,
+          "classes": 20,
+          "metrics": [
+            73.25842696629213,
+            69.34239512388942,
+            70.49386290145303,
+            69.71605244150331,
+            72.60065385274885,
+            72.93695296026492
+          ],
+          "saved_secondary_metrics_percent": {
+            "prec": 70.49386290145303,
+            "rec": 69.71605244150331,
+            "weighted_p": 72.93695296026492
+          },
+          "prediction_sha256": "aea4fa80f20b0f4c4b6840f889932df543baa800b722ee2db56cdac22a132a04"
+        },
+        {
+          "path": "results/journal_mintrec1_baselines_v1/journal_mintrec1_mag_bert_seed43",
+          "seed": 43,
+          "n_test": 445,
+          "classes": 20,
+          "metrics": [
+            75.0561797752809,
+            72.02951480018214,
+            72.82188391665652,
+            72.10623203446521,
+            74.81944427761103,
+            75.1921128243564
+          ],
+          "saved_secondary_metrics_percent": {
+            "prec": 72.82188391665652,
+            "rec": 72.10623203446521,
+            "weighted_p": 75.1921128243564
+          },
+          "prediction_sha256": "3117fd952b0914e8d6b6d00c18a81485b20632f115939450a8c8a4ecd2dc9020"
+        },
+        {
+          "path": "results/journal_mintrec1_baselines_v1/journal_mintrec1_mag_bert_seed44",
+          "seed": 44,
+          "n_test": 445,
+          "classes": 20,
+          "metrics": [
+            73.48314606741573,
+            69.4245345239628,
+            71.14884973935216,
+            69.43347672115667,
+            73.13990707803272,
+            73.94047776626861
+          ],
+          "saved_secondary_metrics_percent": {
+            "prec": 71.14884973935216,
+            "rec": 69.43347672115667,
+            "weighted_p": 73.94047776626861
+          },
+          "prediction_sha256": "8de85a0d51413d3d87290655fd2e7bf3f47893703ffb2211964c2ff4ed146a6a"
+        }
+      ],
+      "mean": [
+        73.93258426966291,
+        70.26548148267813,
+        71.48819885248723,
+        70.4185870657084,
+        73.52000173613085,
+        74.02318118362997
+      ],
+      "sd": [
+        0.9795278524810483,
+        1.5282496128608323,
+        1.2005368912475967,
+        1.4683567055930233,
+        1.1571999391639631,
+        1.12985237734171
+      ]
+    },
+    "mintrec1_tcl_map": {
+      "runs": [
+        {
+          "path": "results/journal_mintrec1_baselines_v1/journal_mintrec1_tcl_map_seed42",
+          "seed": 42,
+          "n_test": 445,
+          "classes": 20,
+          "metrics": [
+            72.35955056179775,
+            67.91556949285807,
+            67.30712919093588,
+            69.59937269336778,
+            72.11964185319204,
+            72.59292243810613
+          ],
+          "saved_secondary_metrics_percent": {
+            "prec": 67.30712919093588,
+            "rec": 69.59937269336778,
+            "weighted_p": 72.59292243810613
+          },
+          "prediction_sha256": "011944334b02e0e6885e352ec6a49f693ac7257c0996840d5f59e2470908cb6f"
+        },
+        {
+          "path": "results/journal_mintrec1_baselines_v1/journal_mintrec1_tcl_map_seed43",
+          "seed": 43,
+          "n_test": 445,
+          "classes": 20,
+          "metrics": [
+            77.07865168539327,
+            73.43566717498726,
+            72.77710185321115,
+            75.17212814422462,
+            76.70881819000293,
+            77.27885970660621
+          ],
+          "saved_secondary_metrics_percent": {
+            "prec": 72.77710185321115,
+            "rec": 75.17212814422462,
+            "weighted_p": 77.27885970660621
+          },
+          "prediction_sha256": "9a3ef39d4f68f621cf1f198c70b2d235000e5409d6a38db0b44c8a0e08a207be"
+        },
+        {
+          "path": "results/journal_mintrec1_baselines_v1/journal_mintrec1_tcl_map_seed44",
+          "seed": 44,
+          "n_test": 445,
+          "classes": 20,
+          "metrics": [
+            72.35955056179775,
+            67.34153917028945,
+            69.39677434724607,
+            68.05773844951722,
+            71.3649027505325,
+            72.13699458622078
+          ],
+          "saved_secondary_metrics_percent": {
+            "prec": 69.39677434724607,
+            "rec": 68.05773844951722,
+            "weighted_p": 72.13699458622078
+          },
+          "prediction_sha256": "5a82a9f196fd6fb8aabcbc4be06fab4b8b7713f191af7a23c8e706d51070292e"
+        }
+      ],
+      "mean": [
+        73.93258426966293,
+        69.5642586127116,
+        69.82700179713103,
+        70.94307976236986,
+        73.39778759790916,
+        74.0029255769777
+      ],
+      "sd": [
+        2.7245743040409396,
+        3.36500087590673,
+        2.760248535093459,
+        3.7426991192860197,
+        2.892161901520467,
+        2.8461861969624986
+      ]
+    },
+    "mintrec1_mintood": {
+      "runs": [
+        {
+          "path": "results/journal_mintrec1_baselines_v1/journal_mintrec1_mintood_seed42",
+          "seed": 42,
+          "n_test": 445,
+          "classes": 20,
+          "metrics": [
+            74.8314606741573,
+            71.94242323547758,
+            72.63302196169843,
+            72.47113293005195,
+            74.56054110041954,
+            75.05532820830244
+          ],
+          "saved_secondary_metrics_percent": {
+            "prec": 72.63302196169843,
+            "rec": 72.47113293005195,
+            "weighted_p": 75.05532820830244
+          },
+          "prediction_sha256": "9d37acf0b3574087787521f97612ed01e2728f80e4d855251695f504e5b998a5"
+        },
+        {
+          "path": "results/journal_mintrec1_baselines_v1/journal_mintrec1_mintood_seed43",
+          "seed": 43,
+          "n_test": 445,
+          "classes": 20,
+          "metrics": [
+            76.62921348314606,
+            73.69874862758799,
+            77.8720346714054,
+            73.21028856350365,
+            75.75542664964992,
+            77.4270968309253
+          ],
+          "saved_secondary_metrics_percent": {
+            "prec": 77.8720346714054,
+            "rec": 73.21028856350365,
+            "weighted_p": 77.4270968309253
+          },
+          "prediction_sha256": "6f5dad7a768f8bdac102382e19cddbc64162cd8e2d26fb1d772bd32599530a31"
+        },
+        {
+          "path": "results/journal_mintrec1_baselines_v1/journal_mintrec1_mintood_seed44",
+          "seed": 44,
+          "n_test": 445,
+          "classes": 20,
+          "metrics": [
+            73.93258426966293,
+            70.38988422614591,
+            72.46147954850392,
+            69.60704075707503,
+            73.56467004581559,
+            74.07890466077409
+          ],
+          "saved_secondary_metrics_percent": {
+            "prec": 72.46147954850392,
+            "rec": 69.60704075707503,
+            "weighted_p": 74.07890466077409
+          },
+          "prediction_sha256": "7099264595c8cb05192906f4cb3b82b2d50d3c48319ccf7a9c8d033697af54b0"
+        }
+      ],
+      "mean": [
+        75.13108614232209,
+        72.01035202973715,
+        74.32217872720258,
+        71.76282075021021,
+        74.62687926529502,
+        75.52044323333394
+      ],
+      "sd": [
+        1.3730563880017446,
+        1.655477770191987,
+        3.0754616918968782,
+        1.9031889808206899,
+        1.0968838536509764,
+        1.7218730185318551
+      ]
+    }
+  },
+  "failures": [],
+  "download_problems": [],
+  "audited_at_utc": "2026-10-13T01:16:34.250792+00:00",
+  "n_test": 445,
+  "classes": 20,
+  "evaluation": "Recomputed locally from downloaded audited predictions; fixed 20-class universe; three optimization seeds per method",
+  "sealed_plan_sha256": "6989c9c06dc476785b591f63be0f06b4852065feecfcf9398886c7aedec5ab29"
+}

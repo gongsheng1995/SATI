@@ -1,0 +1,20 @@
+{
+  "n": 2033,
+  "reproduced_saved_metrics": {
+    "acc": 0.6005902606984752,
+    "weighted_f1": 0.584105540322125,
+    "f1": 0.5312456578330966
+  },
+  "checkpoint": "ordinary_best_dev_accuracy",
+  "auxiliary_masks_used_at_prediction": false,
+  "ground_truth_label_view_at_prediction": false,
+  "contrastive_encoder_used_at_prediction": false,
+  "alignment": "Native pooled transformer fusion on zero-padded sequences; no timestamps",
+  "synthetic_ood_at_prediction": false,
+  "binary_head_used_at_prediction": true,
+  "fixed_class_universe": 30,
+  "backbone": "pinned_mintood_init_complete_adaptation",
+  "padding_markers_preserved_in_zeroing": true,
+  "source_revision": "ad0cd88980c970366491a3d17268932b86bdeed1",
+  "absolute_deadline": "2026-10-08T06:45:33.438249+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "n": 445,
+  "reproduced_saved_metrics": {
+    "acc": 0.7235955056179775,
+    "weighted_f1": 0.7136490275053249,
+    "f1": 0.6734153917028944
+  },
+  "checkpoint": "ordinary_best_dev_accuracy",
+  "auxiliary_masks_used_at_prediction": false,
+  "fixed_class_universe": 20,
+  "backbone": "pinned_tcl_map_init_repaired_adaptation",
+  "method": "tcl_map"
+}
